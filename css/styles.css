@@ -1,84 +1,27 @@
-
-
-h1 {  /*nombre del estilo o botón*/
-background: #cccccc; /*color fondo*/
-border-bottom: 5px solid #b5f2f2; /*grosor, estilo y color borde inferior*/
-font: normal normal 18px quicksand;  /*fuente*/
-color:#ffffff;  /*color de la fuente*/
-letter-spacing: 2px; /*separación entre las letras*/
-text-align: center; /*podemos cambiar por right. Si lo queremos a la izq. borrar esta línea*/
-text-transform: uppercase; /*texto se transforma en mayúsculas. Si no queremos mayúsculas, borrar esta línea*/
-padding: 6px;  /*tamaño-ancho del fondo*/
-}
-
-body
-
-
-
-
-#block5 {
-    background:#27453A;
-    border:3px solid #D95B43;
-    color:#ECD078;
-    font-family:Georgia,"Times New Roman",Times,serif;
-    margin:20px 0px;
-    padding:20px;
-}
-
-#block5 .date_block {
-    border-left:0px solid #D95B43;
-    display:block;
-    float:rightright;
-    font-style:italic;
-    height:50px;
-    margin:0 20px;
-    padding:10px 20px;
-    width:90px;
-    .image
-}
-
-#block5 .day {
-    font-size:22px;
-    font-weight:normal;
-    padding:0 0 20px;
-    text-align:center;
-}
-#block5 .comments {
-    background:transparent url(images/comments.png) no-repeat scroll 0 5px;
-    font-size:11px;
-    padding:2px 0 0 20px;
-    text-align:center;
-}
-
-#block5 h2{
-    border-bottom:1px solid #D95B43;
-    font-size:24px;
-    font-weight:normal;
-    letter-spacing:-1px;
-    line-height:26px;
-}
-#block5 h2 a {
-    border:medium none;
-    color:#fffffb;
-    text-decoration:none;
-}
-#block5 .author a {
-    color:#D95B43;
-    font-weight:bold;
-    text-decoration:none;
-}
-
-
- Helvetica or Arial */
-  font-family: Helvetica, sans-serif;
-  /* Set line height to be 1.5 times larger than default */
+body {
+  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.5;
-
 }
 
 header {
-  /* Set text alignment to center */
   text-align: center;
+}
+
+footer {
+ /* Set font color to white */
+   color: #fffffb;
+ /* Set background color to black */
+   background-color: #000;
+
+ /* Set padding on all sides to be 20 pixels */
+   padding:  20px;
+ /* Set text alignment to center */
+   text-align: center;
+ /* Set margin on top to be 60 pixels */
+   margin-top: 60px;
+   position: relative;
+   bottom: 0;
+   display: inline-block;
 }
 
 main {
@@ -88,76 +31,19 @@ main {
   margin: auto;
   /* Set padding to be 0 pixels top & bottom, and 20 pixels left & right */
   padding:  0px  20PX;
-;
-}
-
-body {
-  }
-
-p {
-  /* Set font color to be the hex code 666666 */
-  color:  #999999;
-}
-
-p.different {
-  color: #666666;
 }
 
 
-.faded {
-  /* Set opacity of the text to be 0.7 */
-  opacity: 0;
-
+h1 {  /*nombre del estilo o botón*/
+  background: #cccccc; /*color fondo*/
+  border-bottom: 5px solid #b5f2f2; /*grosor, estilo y color borde inferior*/
+  font: normal normal 18px quicksand;  /*fuente*/
+  color:#ffffff;  /*color de la fuente*/
+  letter-spacing: 2px; /*separación entre las letras*/
+  text-align: center; /*podemos cambiar por right. Si lo queremos a la izq. borrar esta línea*/
+  text-transform: uppercase; /*texto se transforma en mayúsculas. Si no queremos mayúsculas, borrar esta línea*/
+  padding: 6px;  /*tamaño-ancho del fondo*/
 }
-
-img.bowie {
-  width:500px;
-  height:300px;
-  border-radius:150px
-}
-
-img.daniel {
-  width:500px;
-  height:300px;
-  border-radius:150px
-}
-
-img.sharon {
-  width:500px;
-  height:300px;
-  border-radius:150px;
-  }
-
-img.squirrel1 {
-  /* Set max width to be 100% of the containing element */
-
-margin-top: auto;
-margin-bottom: 15PX;
-border-radius: 150px;
-/* position: absolute; */
-float: right;
-padding: 15px;
-width: 200px;
-margin-right: 60px;
-}
-
-
-img.barca {
-  /* Set max width to be 100% of the containing element */
-  max-width: 100%;
-  margin-top: auto;
-  margin-bottom: 15pX;
-
-}
-
-H1
-
-{
-  /* Set font color to be purple (BONUS: try using a hex or rgb code!) */
-    color: #00000;
-    text-decoration: underline;
-}
-
 
 h3 {
   font-size: 35px;
@@ -171,65 +57,104 @@ h2 {
     color: #948f41;;
 }
 
-h4
-{
+h4 {
   font-style: normal;
   font-weight: 100;
   font-weight: bold;
   font-size: 24px
-  }
+}
 
-h5
-{
+h5 {
  font-size: 35px;
  /* Set border along bottom to be a black solid line 5 pixels thick */
  border-bottom:5PX solid#000000;
- }
+}
 
- footer {
-   /* Set font color to white */
-     color: #fffffb;
-   /* Set background color to black */
-     background-color: #000;
+p.different {
+  color: #666666;
+}
 
-   /* Set padding on all sides to be 20 pixels */
-     padding:  20px;
-   /* Set text alignment to center */
-     text-align: center;
-   /* Set margin on top to be 60 pixels */
-     margin-top: 60px;
-     position: relative;
-     bottom: 0;
-     display: inline-block;
- }
+#block5 {
+  background:#27453A;
+  border:3px solid #D95B43;
+  color:#ECD078;
+  font-family:Georgia,"Times New Roman",Times,serif;
+  margin:20px 0px;
+  padding:20px;
+}
+
+#block5 .date_block {
+  border-left:0px solid #D95B43;
+  display:block;
+  float:rightright;
+  font-style:italic;
+  height:50px;
+  margin:0 20px;
+  padding:10px 20px;
+  width:90px;
+}
+
+#block5 .day {
+  font-size:22px;
+  font-weight:normal;
+  padding:0 0 20px;
+  text-align:center;
+}
+#block5 .comments {
+  background:transparent url(images/comments.png) no-repeat scroll 0 5px;
+  font-size:11px;
+  padding:2px 0 0 20px;
+  text-align:center;
+}
+
+#block5 h2{
+  border-bottom:1px solid #D95B43;
+  font-size:24px;
+  font-weight:normal;
+  letter-spacing:-1px;
+  line-height:26px;
+}
+
+#block5 h2 a {
+  border:medium none;
+  color:#fffffb;
+  text-decoration:none;
+}
+
+#block5 .author a {
+  color:#D95B43;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+img.team {
+  width:500px;
+  height:300px;
+  border-radius:150px
+}
+
+img.squirrel1 {
+  /* Set max width to be 100% of the containing element */
+  margin-top: auto;
+  margin-bottom: 15PX;
+  border-radius: 150px;
+  /* position: absolute; */
+  float: right;
+  padding: 15px;
+  width: 200px;
+  margin-right: 60px;
+}
 
 
-
-
-@media (max-width: 6000px) {
-
-
-  h5 {
-    font-size: 35px;
-    /* Set border along bottom to be a black solid line 5 pixels thick */
-    border-bottom:5PX solid#000000;
-    }
-
-  p {
-    color: white;
-  }
-  /* Question - did the font color change? If not, why? Let's fix that below */
-
-  /* Where did the H2's go? See if you can fix that too! */
+img.barca {
+  /* Set max width to be 100% of the containing element */
+  max-width: 100%;
+  margin-top: auto;
+  margin-bottom: 15pX;
 
 }
 
-.polaroid-images {
-  position: absolute;
-}
-
-.polaroid-images a
-{
+.polaroid-images a {
 	background: white;
 	display: inline;
 	float:right;
@@ -245,7 +170,7 @@ h5
 	-moz-transition: all .15s linear;
 	transition: all .15s linear;
 	z-index:0;
-        position:relative;
+  position:relative;
 }
 
 .polaroid-images a:after {
@@ -261,31 +186,31 @@ h5
 	width: inherit;
 }
 
-.polaroid-images a:nth-child(2n)
-{
+.polaroid-images a:nth-child(2n) {
 	-webkit-transform: rotate(4deg);
 	-moz-transform: rotate(4deg);
 	transform: rotate(4deg);
 }
+
 .polaroid-images a:nth-child(3n) {
 	-webkit-transform: rotate(-24deg);
 	-moz-transform: rotate(-24deg);
 	transform: rotate(-24deg);
 }
-.polaroid-images a:nth-child(4n)
-{
+
+.polaroid-images a:nth-child(4n) {
 	-webkit-transform: rotate(14deg);
 	-moz-transform: rotate(14deg);
 	transform: rotate(14deg);
 }
-.polaroid-images a:nth-child(5n)
-{
+
+.polaroid-images a:nth-child(5n) {
 	-webkit-transform: rotate(-18deg);
 	-moz-transform: rotate(-18deg);
 	transform: rotate(-18deg);
 }
 
-.polaroid-images a:hover{
+.polaroid-images a:hover {
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -295,5 +220,5 @@ h5
 	z-index:10;
 	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
 	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
-        box-shadow: 0 10px 20px rgba(0,0,0,.7);
+  box-shadow: 0 10px 20px rgba(0,0,0,.7);
 }
