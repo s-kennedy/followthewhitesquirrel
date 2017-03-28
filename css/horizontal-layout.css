@@ -1,19 +1,16 @@
 body {
   display: flex;
   flex-direction: row;
-  width: 300vw;
+  width: 600vw;
   font-family: Helvetica;
-  color: white;
 }
 
-section.horizontal {
+section.horizontal, header.horizontal {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 80px;
-  font-weight: bold;
 }
 
 section.green {
