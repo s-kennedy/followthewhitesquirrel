@@ -1,0 +1,31 @@
+{
+  "name": "followthewhitesquirrel",
+  "version": "1.0.0",
+  "description": "Camping and hiking tours in Ontario",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-kennedy/followthewhitesquirrel.git"
+  },
+  "keywords": [
+    "camping",
+    "hiking",
+    "ontario"
+  ],
+  "author": "Sharon Kennedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s-kennedy/followthewhitesquirrel/issues"
+  },
+  "homepage": "https://github.com/s-kennedy/followthewhitesquirrel#readme",
+  "dependencies": {
+    "handlebars": "^4.0.6",
+    "node-polyglot": "^2.2.2"
+  },
+  "scripts": {
+    "build-dist": "handlebars templates/**.handlebars -f js/hbs.js && sass sass/styles.scss css/styles.css"
+  }
+}

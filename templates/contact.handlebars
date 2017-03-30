@@ -1,0 +1,29 @@
+<div class="overlay"></div>
+<div class="form">
+<h2 class="title-dark">{{contact.contactUs}}</h2>
+  <form action="https://script.google.com/macros/s/AKfycbxb2hQxFXnKvKA67YG2YngTv5zLea5mPjsIecjslySsOG_X7_xp/exec">
+    <div class="form-field">
+      <label for="name">{{contact.name}}</label>
+      <input type="text" name="name" autofocus>
+    </div>
+    <div class="form-field">
+      <label for="email">{{contact.email}}</label>
+      <input type="email" name="email">
+    </div>
+    <div class="form-field">
+      <label for="departure-date">{{contact.departure}}</label>
+      <input type="date" name="departure-date">
+    </div>
+    <div class="form-field">
+      <label for="return-date">{{contact.return}}</label>
+      <input type="date" name="return-date">
+    </div>
+    <div class="form-field">
+      <label for="message">{{contact.message}}</label>
+      <textarea name="message"></textarea>
+    </div>
+    <div class="submit">
+      <input type="submit" name={{contact.submit}} class="btn">
+    </div>
+  </form>
+</div>

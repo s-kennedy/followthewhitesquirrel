@@ -1,72 +1,35 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title></title>
+  <head>
+    <title></title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link rel="stylesheet" type="text/css" href="css/horizontal-layout.css">
+    <link rel="stylesheet" type="text/css" href="css/horizontal-layout.css">
+    <script type="text/javascript" src="node_modules/handlebars/dist/handlebars.js"></script>
+    <script type="text/javascript" src="node_modules/handlebars/dist/handlebars.runtime.js"></script>
+    <script type="text/javascript" src="js/hbs.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous">
     </script>
     <title>Follow the White 🐿️</title>
-	</head>
+  </head>
 
-	<body>
-		<header class="horizontal">
-      <div class="title">
-        <h1>Follow the White Squirrel</h1>
-        <h2>Camping and Hiking tours in Ontario</h2>
-      </div>
-	  </header>
+  <body>
+    <header id="landing"></header>
 
-    <section id="intro" class="horizontal">
-			<h2 class="text">Our mission as a little adventure family is to bring the native and foreigners the opportunity to explore the wild canada far from the concrete but near from the people and nature. Where we belong.</h2>
-    </section>
+    <section id="intro"></section>
 
-    <section id="team" class="horizontal">
-      <div id="dani" class="member">
-        <p>Hello I am Daniel...</p>
-      </div>
-      <div id="sharon" class="member">
-        <p>Hi and I am Sharon...</p>
-      </div>
+    <section id="team"></section>
 
-    </section>
-
-    <section id="bowie" class="horizontal">
-      <div class="text">
-        <h2>CAPTAIN BOWIE</h2>
-  	    <p>
-          Once upon a time there was born Captain Bowie in Tenesse in july 2015 in the EE.UU. He was allways following a dream. Every day Captain Bowie was thinking if that idea could be possible. Because of that he come to Toronto into our family to persui his dream. Because of that he trainned hard every day. Until finally Captain Bowie realice that following the white squirrel is just an attitude! He will lead you into an adventure, sometimes he will stop just to be sure you are doing well :)
-        </p>
-      </div>
-    </section>
+    <section id="bowie"></section>
 
 
-    <section id="gallery" class="horizontal">
-      <h5>POLAROIDS</h5>
-      <div class="polaroid-images">
-        <a href="" title="Base Camp"><img height="200" src="pictures/tienda.jpg" alt="Cave" title="Cave" /></a>
-				<a href="" title="Mirror"><img height="200" src="pictures/paisaje.jpg" alt="Cave" title="Cave" /></a>
-				<a href="" title="Good Morning"><img height="200" src="pictures/morning.jpg" alt="Cave" title="Cave" /></a>
-				<a href="" title="Canoes"><img height="200" src="pictures/canoa.jpg" alt="Cave" title="Cave" /></a>
-				<a href="" title="Just walk!"><img height="200" src="pictures/paseo.jpg" alt="Cave" title="Cave" /></a>
-				<a href="" title="Sharon and Dani"><img height="200" src="pictures/sharonanddani.jpg" alt="Sharon and Dani" title="" /></a>
-			</div>
-		</section>
+    <section id="gallery"></section>
 
-    <section id='contact_form' class="horizontal">
-      <h3>CONTACT US</h3>
-      <form action="https://script.google.com/macros/s/AKfycbxb2hQxFXnKvKA67YG2YngTv5zLea5mPjsIecjslySsOG_X7_xp/exec">
-        <label for="name">Name:</label>
-        <input type="text" name="name">
-        <label for="email">Email address:</label>
-        <input type="email" name="email">
-        <label for="email">Message:</label>
-        <input type="text" name="message">
-        <input type="submit" name="submit" class="btn">
-      </form>
-    </section>
-	</body>
+    <section id='contact'></section>
+  </body>
 </html>
+
+<script type="text/javascript" src="js/locales/en.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
