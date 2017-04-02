@@ -1,0 +1,23 @@
+<div class="overlay"></div>
+<div class="content">
+  <div class="text">
+    <h1 class="headline">{{pricing.headline}}</h1>
+    <div class="pricing-columns">
+      {{#each pricing.products}}
+        <div class="pricing camping">
+          <h2>{{price}}</h2>
+          <h3>{{title}}</h3>
+          <h4>{{offer.included}}</h4>
+          <ul class="included">
+            {{#each offer.items}}
+            <li>{{label}}</li>
+            {{/each}}
+          </ul>
+          <div class="action">
+            <a href="#contact" class="button yellow">Book it</a>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

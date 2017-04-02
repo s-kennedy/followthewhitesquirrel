@@ -1,4 +1,15 @@
 <div class="overlay"></div>
-<div class="text">
-  <h2>{{intro.mission}}</h2>
+<div class="content">
+  <div class="text">
+    <h1 class="greeting">{{intro.invitation}}</h1>
+    <p class="conversation">{{intro.explanation}}</p>
+    <div class="call-to-action">
+      <p class="conversation">{{intro.hikingOrCamping}}</p>
+      <div class="actions">
+        {{#each intro.actions}}
+        <a href="{{url}}" class="button blue option">{{anchor}}</a>
+        {{/each}}
+      </div>
+    </div>
+  </div>
 </div>

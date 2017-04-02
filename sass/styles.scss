@@ -1,38 +1,48 @@
 @import 'variables';
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: $primary-font;
   line-height: 1.5;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
-header {
-  color: #fff;
-  background: url('../pictures/barca.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+section {
+  width: 100vw;
+  height: auto;
+  position: relative;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .text {
+    max-width: 800px;
+    color: #fff;
+    z-index: 1;
+    width: 70%;
+    margin: 40px;
+  }
 
   .overlay {
     height: 100%;
     width: 100%;
-    background: linear-gradient(35deg, $dark-yellow, $dark-green, $dark-purple);
-    opacity: 0.4;
-  }
-
-  .title {
+    opacity: 0.5;
     position: absolute;
   }
-}
 
-section, header {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 footer {
@@ -46,14 +56,27 @@ footer {
   display: inline-block;
 }
 
-main {
-  max-width: 800px;
-  margin: auto;
-  padding:  0px  20PX;
-}
-
 h1, h2, h3, h2, h5 {
   color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-family: $title-font;
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.headline {
+  text-align: center;
+  z-index: 1;
 }
 
 .title-underline-white {
@@ -61,91 +84,242 @@ h1, h2, h3, h2, h5 {
 }
 
 .title-dark {
-  color: #000;
-  border-bottom: 5px solid #000;
+  color: $dark-purple;
 }
 
-section {
-  .text {
-    max-width: 800px;
-    color: #fff;
+section#landing {
+  color: #fff;
+  background: url('../pictures/barca.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  justify-content: flex-end;
+
+  .overlay {
+    background: linear-gradient(35deg, $dark-yellow, $dark-green, $dark-purple);
+  }
+
+  .content {
+    height: inherit;
+    justify-content: flex-end;
+  }
+
+  .ftws {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    font-size: 1.2em;
   }
 }
 
 section#intro {
   background: url('../pictures/lake.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   .overlay {
-    height: 100%;
-    width: 100%;
     background: $dark-blue;
-    opacity: 0.5;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+}
+
+section#camping {
+  background: url('../pictures/tienda.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .overlay {
+    background: $dark-purple;
+  }
+}
+
+section#hiking {
+  background: url('../pictures/paseo.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .overlay {
+    background: $dark-green;
+  }
+}
+
+section#pricing {
+  background: url('../pictures/canoa.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .overlay {
+    background: $dark-blue;
   }
 
   .text {
-    position: absolute;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .pricing-columns {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pricing {
+    flex-grow: 1;
+    padding: 20px;
+  }
+
+  .action {
+    display: flex;
+    justify-content: center;
+
+    .button {
+      text-align: center;
+    }
   }
 }
 
 section#team {
   display: flex;
   flex-direction: row;
-  height: auto;
+
+  .text {
+    max-width: 100%;
+  }
+
+  .overlay {
+    background: linear-gradient(190deg, $dark-green, $dark-purple);
+  }
+
+  .team-members {
+    display: flex;
+    flex-direction: row;
+  }
 
   .member {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    flex-direction: column;
+    padding: 20px;
 
-  p {
-    color: #fff;
-    font-size: 36px;
-    position: absolute;
-  }
+    .description {
+      color: #fff;
+    }
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-
-section#bowie {
-  background: url('../pictures/bowie.jpg') no-repeat center center fixed;
-  background-size: cover;
-
-  .overlay {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(135deg, $dark-yellow, $dark-purple);
-    opacity: 0.4;
-  }
-
-  .text {
-    position: absolute;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 
 section#gallery {
-  height: auto;
-  margin: 40px;
+  flex-direction: column;
+
+  .overlay {
+    background: linear-gradient(190deg, $dark-green, $dark-yellow);
+  }
+
+  .polaroid-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .polaroid-images {
+    a {
+      background: white;
+      display: inline;
+      float:right;
+      background-repeat: round;
+      margin: 0 15px 30px;
+      padding: 10px 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+      box-shadow: 0 4px 6px rgba(0,0,0,.3);
+      -webkit-transition: all .15s linear;
+      -moz-transition: all .15s linear;
+      transition: all .15s linear;
+      z-index:0;
+      position:relative;
+    }
+
+    a:after {
+      color: #333;
+      font-size: 20px;
+      content: attr(title);
+      position: relative;
+      top:15px;
+    }
+
+    a:hover {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      transform: scale(1.2);
+      z-index:10;
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+      -moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+      box-shadow: 0 10px 20px rgba(0,0,0,.7);
+    }
+
+    img {
+      display: block;
+      width: inherit;
+    }
+
+    a:nth-child(2n) {
+      -webkit-transform: rotate(4deg);
+      -moz-transform: rotate(4deg);
+      transform: rotate(4deg);
+    }
+
+    a:nth-child(3n) {
+      -webkit-transform: rotate(-24deg);
+      -moz-transform: rotate(-24deg);
+      transform: rotate(-24deg);
+    }
+
+    a:nth-child(4n) {
+      -webkit-transform: rotate(14deg);
+      -moz-transform: rotate(14deg);
+      transform: rotate(14deg);
+    }
+
+    a:nth-child(5n) {
+      -webkit-transform: rotate(-18deg);
+      -moz-transform: rotate(-18deg);
+      transform: rotate(-18deg);
+    }
+  }
 }
 
 section#contact {
 
   .overlay {
-    height: 100%;
-    width: 100%;
     background: linear-gradient(190deg, $dark-green, $dark-purple);
-    opacity: 0.4;
   }
 
   .form {
     width: 50vw;
     min-width: 400px;
-    position: absolute;
+    padding: 40px;
     display: flex;
     flex-direction: column;
 
@@ -198,97 +372,26 @@ section#contact {
   }
 }
 
-img {
-  .team {
-    width:500px;
-    height:300px;
-    border-radius:150px;
+.button {
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+
+  &.purple {
+    background: $dark-purple;
   }
 
-  .squirrel1 {
-    margin-top: auto;
-    margin-bottom: 15PX;
-    border-radius: 150px;
-    float: right;
-    padding: 15px;
-    width: 200px;
-    margin-right: 60px;
-  }
-}
-
-.polaroid-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.polaroid-images {
-  a {
-    background: white;
-    display: inline;
-    float:right;
-    background-repeat: round;
-    margin: 0 15px 30px;
-    padding: 10px 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-    -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
-    box-shadow: 0 4px 6px rgba(0,0,0,.3);
-    -webkit-transition: all .15s linear;
-    -moz-transition: all .15s linear;
-    transition: all .15s linear;
-    z-index:0;
-    position:relative;
+  &.green {
+    background: $dark-green;
   }
 
-  a:after {
-    color: #333;
-    font-size: 20px;
-    content: attr(title);
-    position: relative;
-    top:15px;
+  &.blue {
+    background: $dark-blue;
   }
 
-  a:hover {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
-    z-index:10;
-    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-    -moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
-    box-shadow: 0 10px 20px rgba(0,0,0,.7);
-  }
-
-  img {
-    display: block;
-    width: inherit;
-  }
-
-  a:nth-child(2n) {
-    -webkit-transform: rotate(4deg);
-    -moz-transform: rotate(4deg);
-    transform: rotate(4deg);
-  }
-
-  a:nth-child(3n) {
-    -webkit-transform: rotate(-24deg);
-    -moz-transform: rotate(-24deg);
-    transform: rotate(-24deg);
-  }
-
-  a:nth-child(4n) {
-    -webkit-transform: rotate(14deg);
-    -moz-transform: rotate(14deg);
-    transform: rotate(14deg);
-  }
-
-  a:nth-child(5n) {
-    -webkit-transform: rotate(-18deg);
-    -moz-transform: rotate(-18deg);
-    transform: rotate(-18deg);
+  &.yellow {
+    background: $dark-yellow;
   }
 }
