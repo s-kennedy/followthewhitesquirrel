@@ -1,16 +1,18 @@
 <div class="overlay"></div>
 <div class="content">
-  <div class="text">
+  <div class="columns">
     <h1 class="headline">{{team.headline}}</h1>
     <div class="team-members">
       {{#each team.members}}
         <div class="member">
-          <div class="team-picture">
-            <img src={{image}} alt={{name}}>
+          <div class="team-picture" id={{name}}>
+            <div class="greeting">
+              <h3>{{greeting}}</h3>
+            </div>
           </div>
           <div class="description">
-            <h2>{{greeting}}</h2>
             <p>{{bio}}</p>
+            <p>{{languages}}</p>
           </div>
         </div>
       {{/each}}

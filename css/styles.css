@@ -1,7 +1,7 @@
 body {
   font-family: "Slabo 27px", Helvetica, sans-serif;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 22px;
   display: flex;
   flex-direction: column;
   margin: 0; }
@@ -9,29 +9,32 @@ body {
 section {
   width: 100vw;
   height: auto;
-  position: relative; }
+  position: relative;
+  color: #fff; }
   section .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px; }
-  section .text {
-    max-width: 800px;
-    color: #fff;
-    z-index: 1;
-    width: 70%;
     margin: 40px; }
+  section .text {
+    z-index: 1;
+    width: 80%; }
+  section .columns {
+    max-width: 100%;
+    width: 100%;
+    z-index: 1; }
   section .overlay {
     height: 100%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.6;
     position: absolute; }
   section .call-to-action {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding: 20px; }
 
 footer {
   color: #fffffb;
@@ -49,13 +52,18 @@ h1, h2, h3, h2, h5 {
 
 h1 {
   font-family: "Amatica SC", Helvetica, sans-serif;
-  font-size: 4em; }
+  font-size: 3.4em; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 2.4em; }
 
 h3 {
-  font-size: 2em; }
+  font-size: 1.6em; }
+
+a {
+  color: #fff; }
+  a:hover {
+    font-weight: bold; }
 
 .headline {
   text-align: center;
@@ -89,6 +97,7 @@ section#landing {
     font-size: 1.2em; }
 
 section#intro {
+  min-height: 100vh;
   background: url("../pictures/lake.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -97,7 +106,7 @@ section#intro {
   section#intro .overlay {
     background: #2D4671; }
   section#intro p {
-    font-size: 1.5em; }
+    font-size: 1.2em; }
 
 section#camping {
   background: url("../pictures/tienda.jpg") no-repeat center center fixed;
@@ -107,6 +116,19 @@ section#camping {
   background-size: cover; }
   section#camping .overlay {
     background: #3D3175; }
+  section#camping .product-highlight {
+    border: 4px solid #E79E13; }
+    section#camping .product-highlight h3 {
+      margin: 0.6em; }
+  section#camping .product-description {
+    background: #fff;
+    color: #3D3175;
+    padding: 4%;
+    margin: 6% 0; }
+  section#camping a:not(.button) {
+    color: #3D3175; }
+    section#camping a:not(.button):visited {
+      color: #712F79; }
 
 section#hiking {
   background: url("../pictures/paseo.jpg") no-repeat center center fixed;
@@ -116,6 +138,19 @@ section#hiking {
   background-size: cover; }
   section#hiking .overlay {
     background: #246B61; }
+  section#hiking .product-highlight {
+    border: 4px solid #E79E13; }
+    section#hiking .product-highlight h3 {
+      margin: 0.6em; }
+  section#hiking .product-description {
+    background: #fff;
+    color: #246B61;
+    padding: 4%;
+    margin: 6% 0; }
+  section#hiking a:not(.button) {
+    color: #246B61; }
+    section#hiking a:not(.button):visited {
+      color: #69995D; }
 
 section#pricing {
   background: url("../pictures/canoa.jpg") no-repeat center center fixed;
@@ -134,16 +169,22 @@ section#pricing {
   section#pricing .pricing {
     flex-grow: 1;
     padding: 20px; }
+    section#pricing .pricing h2 {
+      margin: 0;
+      color: #FECE0A; }
   section#pricing .action {
     display: flex;
     justify-content: center; }
     section#pricing .action .button {
       text-align: center; }
+  section#pricing .pricing.camping, section#pricing .pricing.hiking {
+    border-right: 1px solid rgba(255, 255, 255, 0.7); }
 
 section#team {
   display: flex;
   flex-direction: row; }
   section#team .text {
+    width: 100%;
     max-width: 100%; }
   section#team .overlay {
     background: linear-gradient(190deg, #246B61, #3D3175); }
@@ -155,6 +196,36 @@ section#team {
     display: flex;
     flex-direction: column;
     padding: 20px; }
+    section#team .member .team-picture, section#team .member .greeting {
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      transition: all 0.5s ease-in-out; }
+      section#team .member .team-picture .greeting, section#team .member .greeting .greeting {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0; }
+        section#team .member .team-picture .greeting:hover, section#team .member .greeting .greeting:hover {
+          opacity: 1; }
+        section#team .member .team-picture .greeting h3, section#team .member .greeting .greeting h3 {
+          padding: 10px;
+          opacity: 1; }
+      section#team .member .team-picture#dani, section#team .member .greeting#dani {
+        background: url("../pictures/dani.jpg") no-repeat center center;
+        background-size: cover; }
+        section#team .member .team-picture#dani .greeting, section#team .member .greeting#dani .greeting {
+          background-color: rgba(61, 49, 117, 0.5); }
+      section#team .member .team-picture#sharon, section#team .member .greeting#sharon {
+        background: url("../pictures/sharon.jpg") no-repeat center center;
+        background-size: cover; }
+        section#team .member .team-picture#sharon .greeting, section#team .member .greeting#sharon .greeting {
+          background-color: rgba(36, 107, 97, 0.5); }
+      section#team .member .team-picture#bowie, section#team .member .greeting#bowie {
+        background: url("../pictures/bowie.jpg") no-repeat center center;
+        background-size: cover; }
+        section#team .member .team-picture#bowie .greeting, section#team .member .greeting#bowie .greeting {
+          background-color: rgba(231, 158, 19, 0.5); }
     section#team .member .description {
       color: #fff; }
     section#team .member img {
@@ -164,7 +235,7 @@ section#team {
 section#gallery {
   flex-direction: column; }
   section#gallery .overlay {
-    background: linear-gradient(190deg, #246B61, #E79E13); }
+    background: linear-gradient(185deg, #246B61, #2D4671); }
   section#gallery .polaroid-images {
     display: flex;
     flex-wrap: wrap;
@@ -223,61 +294,71 @@ section#gallery {
     -moz-transform: rotate(-18deg);
     transform: rotate(-18deg); }
 
-section#contact .overlay {
-  background: linear-gradient(190deg, #246B61, #3D3175); }
-section#contact .form {
-  width: 50vw;
-  min-width: 400px;
-  padding: 40px;
-  display: flex;
-  flex-direction: column; }
-  section#contact .form .form-field {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2em;
-    margin: 20px 0; }
-    section#contact .form .form-field label {
-      font-size: 0.8em; }
-    section#contact .form .form-field input {
+section#contact {
+  color: #000; }
+  section#contact .overlay {
+    background: linear-gradient(35deg, #712F79, #FECE0A); }
+  section#contact .form {
+    width: 80%;
+    min-width: 400px;
+    z-index: 1; }
+    section#contact .form .form-field {
+      display: flex;
+      flex-direction: column;
       font-size: 1.2em;
-      border: none;
-      border-bottom: 2px solid #000;
-      background: none;
-      padding: 5px 0;
-      font-family: monospace; }
-    section#contact .form .form-field input:focus, section#contact .form .form-field textarea:focus {
-      outline: none; }
-    section#contact .form .form-field textarea {
-      font-size: 1.2em;
-      border: 2px solid #000;
-      background: none;
-      padding: 5px;
-      font-family: monospace;
-      margin: 5px 0; }
-  section#contact .form .submit {
-    display: flex;
-    justify-content: flex-end; }
-    section#contact .form .submit input[type="submit"] {
-      background-color: transparent;
-      color: black;
-      border: 2px solid black;
-      cursor: pointer;
-      font-size: 1.2em;
-      padding: 4px 8px; }
+      margin: 20px 0; }
+      section#contact .form .form-field label {
+        font-size: 0.8em; }
+      section#contact .form .form-field input {
+        font-size: 1.2em;
+        border: none;
+        border-bottom: 2px solid #000;
+        background: none;
+        padding: 5px 0;
+        font-family: monospace; }
+      section#contact .form .form-field input:focus, section#contact .form .form-field textarea:focus {
+        outline: none; }
+      section#contact .form .form-field textarea {
+        font-size: 1.2em;
+        border: 2px solid #000;
+        background: none;
+        padding: 5px;
+        font-family: monospace;
+        margin: 5px 0; }
+    section#contact .form .submit {
+      display: flex;
+      justify-content: flex-end; }
+      section#contact .form .submit input[type="submit"] {
+        border: none;
+        cursor: pointer;
+        font-size: 1.2em;
+        font-family: "Slabo 27px", Helvetica, sans-serif; }
 
 .button {
   padding: 10px 20px;
   border-radius: 2px;
-  color: #fff;
   text-decoration: none;
-  margin: 10px; }
+  margin: 10px;
+  transition: all 0.5s ease-in-out; }
+  .button a {
+    color: #fff !important; }
+    .button a:visited {
+      color: #fff !important; }
   .button.purple {
     background: #3D3175; }
+    .button.purple:hover {
+      background: #A7A5C6; }
   .button.green {
     background: #246B61; }
+    .button.green:hover {
+      background: #69995D; }
   .button.blue {
     background: #2D4671; }
+    .button.blue:hover {
+      background: #4F7CAC; }
   .button.yellow {
     background: #E79E13; }
+    .button.yellow:hover {
+      background: #FECE0A; }
 
 /*# sourceMappingURL=styles.css.map */

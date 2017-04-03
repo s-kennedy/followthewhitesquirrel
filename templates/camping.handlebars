@@ -2,20 +2,24 @@
 <div class="content">
   <div class="text">
     <h1 class="headline">{{camping.headline}}</h1>
-    <p class="product">{{camping.product}}</p>
-    <p class="offer">{{camping.offer.whatWeOffer}}</p>
-    <ul class="included">
-      {{#each camping.offer.items}}
-      <li>{{label}}</li>
-      {{/each}}
-    </ul>
-    <p class="customize">{{camping.customize}}</p>
-    <p class="call-to-action">{{camping.callToAction}}</p>
-    <div class="call-to-action">
-      <div class="actions">
-      {{#each camping.actions}}
-        <a href="{{url}}" class="button purple">{{anchor}}</a>
-      {{/each}}
+    <div class="product-highlight">
+      <h3>{{camping.product}} - {{camping.price}}</h3>
+    </div>
+    <div class="product-description">
+      <p class="description">{{{camping.description}}}</p>
+      <h4 class="offer">{{camping.offer.whatWeOffer}}</h4>
+      <ul class="included">
+        {{#each camping.offer.items}}
+        <li>{{label}}</li>
+        {{/each}}
+      </ul>
+      <p class="customize">{{camping.customize}}</p>
+      <div class="call-to-action">
+        <div class="actions">
+        {{#each camping.actions}}
+          <a href="{{url}}" class="button yellow">{{anchor}}</a>
+        {{/each}}
+        </div>
       </div>
     </div>
   </div>

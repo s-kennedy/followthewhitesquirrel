@@ -16,7 +16,9 @@ EN_CONTENT = {
   },
   camping: {
     headline: "We love camping!",
-    product: "We'll plan a trip that fits your comfort level and preferences. Our typical excursion is a 2.5 day trip (Friday afternoon to Sunday evening) to Algonquin Park.",
+    price: "$400",
+    product: "Weekend in Algonquin Park",
+    description: "We'll plan a trip that fits your comfort level and preferences. Our typical excursion is a 2.5 day trip (Friday afternoon to Sunday evening) to <a href='http://www.algonquinpark.on.ca/'>Algonquin Park</a>.",
     offer: {
       whatWeOffer: "What we offer:",
       items: [
@@ -24,33 +26,30 @@ EN_CONTENT = {
         { label: "Tent, sleeping bags, sleeping pads and other camping equipement" },
         { label: "All meals from dinner on Friday to lunch on Sunday" },
         { label: "Canoe rentals (2 people in a canoe)" },
-        { label: "We'll keep you safe from bears!" },
       ]
     },
     customize: "If you want a more customized trip (longer, shorter, during the week...) let us know what you're looking for and we'll do our best to accommodate!",
-    callToAction: "To book a trip, send us a message with your preferred departure and return dates. We'll get back to you within a day.",
     actions: [
       { anchor: "Book a trip", url: '#contact' },
-      { anchor: "See prices", url: '#pricing' },
     ],
   },
   hiking: {
     headline: "Hiking sounds good!",
-    product: "Our favourite place to hike is the Bruce Trail along the Niagara Escarpment. Our typical day trip is a 10km hike (about 2.5 hours) with a stop for lunch at Felker's Falls. We can either continue for a full afternoon of hiking along the Bruce Trail, or we can take you to visit Niagara Falls. We usually leave Toronto at 10am and return at 6pm, but the schedule is flexible.",
+    price: "$150",
+    product: "Day trip to Niagara",
+    description: "Our typical day trip is a 10km hike along the <a href='http://www.escarpment.org/home/index.php'>Niagara Escarpment</a> with a stop for lunch at <a href=http://www.cityofwaterfalls.ca/felkers-falls/''>Felker's Falls</a>. We can then take you for a visit to <a href='https://www.niagarafallstourism.com/'>Niagara Falls</a> or a tour of <a href='http://winecountryontario.ca/'>Niagara wineries</a>. We usually leave Toronto at 10am and return at 6pm, but the schedule is flexible.",
     offer: {
       whatWeOffer: "What we offer:",
       items: [
         { label: "Transportation from your doorstep (anywhere in the GTA)" },
         { label: "Packed lunch and snacks for the afternoon" },
         { label: "Trail guide for the Bruce Trail" },
-        { label: "Visit to Niagara Falls" },
+        { label: "Flexible schedule" },
       ]
     },
-    customize: "We'll plan the day according to your preferences. We can spend more time hiking and have a shorter visit to Niagara Falls or vice versa. We could also take you to the Niagara wine region if you'd like to visit the wineries. Get in touch and we'll make plans!",
-    callToAction: "To book a trip, send us a message with your preferred date and any other requests. We'll get back to you within a day.",
+    customize: "We're open to customizing this plan according to your preferences. Let us know what your interests are and we'll see what we can do!",
     actions: [
       { anchor: "Book a trip", url: '#contact' },
-      { anchor: "See prices", url: '#pricing' },
     ],
   },
   pricing: {
@@ -58,6 +57,7 @@ EN_CONTENT = {
     callToAction: "Book it",
     products: [
       {
+        name: "camping",
         price: "$400",
         title: "Weekend in Algonquin Park",
         offer: {
@@ -67,12 +67,12 @@ EN_CONTENT = {
             { label: "Tent, sleeping bags, sleeping pads and other camping equipement" },
             { label: "All meals from dinner on Friday to lunch on Sunday" },
             { label: "Canoe rentals (2 people in a canoe)" },
-            { label: "We'll keep you safe from bears!" },
           ]
         },
       },
       {
-        price: "$100",
+        name: "hiking",
+        price: "$150",
         title: "Day hike and Niagara Falls",
         offer: {
           included: "What's included?",
@@ -85,7 +85,8 @@ EN_CONTENT = {
         },
       },
       {
-        price: "¯\_(ツ)_/¯",
+        name: "custom",
+        price: "¯\\_(ツ)_/¯",
         title: "Build your own trip",
         offer: {
           included: "What's included?",
@@ -103,22 +104,25 @@ EN_CONTENT = {
     headline: "Our Team",
     members: [
       {
-        name: "Dani",
+        name: "dani",
         greeting: "Hello, my name is Daniel",
         image: "pictures/dani.jpg",
-        bio: "Blah blah blah",
+        bio: "Dani is an economist from Barcelona, Spain. He loves swimming, hiking, and good converations. Last year, he walked for almost 300km on the Camino de Santiago in the north of Spain - in winter!",
+        languages: "Dani speaks Catalan, Spanish, English, and a bit of Italian.",
       },
       {
-        name: "Sharon",
+        name: "sharon",
         greeting: "Hi, I'm Sharon",
         image: "pictures/sharon.jpg",
-        bio: "Blah blah blah",
+        bio: "Sharon was born in Singapore and grew up in Waterloo, Ontario. She spent many summers camping and canoeing with her family. Her most memorable hike was climbing El Misti in Peru.",
+        languages: "Sharon speaks English, Spanish, and French.",
       },
       {
-        name: "Bowie",
+        name: "bowie",
         greeting: "Woof woof!",
         image: "pictures/bowie.jpg",
-        bio: "Once upon a time there was born Captain Bowie",
+        bio: "Bowie is originally from Tennesse, USA. He is guaranteed to make you smile. He was rescued from a kill shelter and has since gone on to become the CEO of this company. Stay humble, Bowie.",
+        languages: "Bowie speaks Dog and Esperanto.",
       },
     ]
   },

@@ -3,7 +3,7 @@
 body {
   font-family: $primary-font;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 22px;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -13,27 +13,31 @@ section {
   width: 100vw;
   height: auto;
   position: relative;
+  color: #fff;
 
   .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin: 40px;
   }
 
   .text {
-    max-width: 800px;
-    color: #fff;
     z-index: 1;
-    width: 70%;
-    margin: 40px;
+    width: 80%;
+  }
+
+  .columns {
+    max-width: 100%;
+    width: 100%;
+    z-index: 1;
   }
 
   .overlay {
     height: 100%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.6;
     position: absolute;
   }
 
@@ -42,6 +46,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
   }
 }
 
@@ -63,15 +68,22 @@ h1, h2, h3, h2, h5 {
 
 h1 {
   font-family: $title-font;
-  font-size: 4em;
+  font-size: 3.4em;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2.4em;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.6em;
+}
+
+a {
+  color: #fff;
+  &:hover {
+    font-weight: bold;
+  }
 }
 
 .headline {
@@ -116,6 +128,7 @@ section#landing {
 }
 
 section#intro {
+  min-height: 100vh;
   background: url('../pictures/lake.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -127,7 +140,7 @@ section#intro {
   }
 
   p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
 
@@ -141,6 +154,27 @@ section#camping {
   .overlay {
     background: $dark-purple;
   }
+
+  .product-highlight {
+    border: 4px solid $dark-yellow;
+    h3 {
+      margin: 0.6em;
+    }
+  }
+
+  .product-description {
+    background: #fff;
+    color: $dark-purple;
+    padding: 4%;
+    margin: 6% 0;
+  }
+
+  a:not(.button) {
+    color: $dark-purple;
+    &:visited {
+      color: $light-purple;
+    }
+  }
 }
 
 section#hiking {
@@ -152,6 +186,27 @@ section#hiking {
 
   .overlay {
     background: $dark-green;
+  }
+
+  .product-highlight {
+    border: 4px solid $dark-yellow;
+    h3 {
+      margin: 0.6em;
+    }
+  }
+
+  .product-description {
+    background: #fff;
+    color: $dark-green;
+    padding: 4%;
+    margin: 6% 0;
+  }
+
+  a:not(.button) {
+    color: $dark-green;
+    &:visited {
+      color: $light-green;
+    }
   }
 }
 
@@ -179,6 +234,11 @@ section#pricing {
   .pricing {
     flex-grow: 1;
     padding: 20px;
+
+    h2 {
+      margin: 0;
+      color: $light-yellow;
+    }
   }
 
   .action {
@@ -189,6 +249,10 @@ section#pricing {
       text-align: center;
     }
   }
+
+  .pricing.camping, .pricing.hiking {
+    border-right: 1px solid rgba(255,255,255,0.7);
+  }
 }
 
 section#team {
@@ -196,6 +260,7 @@ section#team {
   flex-direction: row;
 
   .text {
+    width: 100%;
     max-width: 100%;
   }
 
@@ -214,6 +279,60 @@ section#team {
     flex-direction: column;
     padding: 20px;
 
+    .team-picture, .greeting {
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      transition: all 0.5s ease-in-out;
+
+      .greeting {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        h3 {
+          padding: 10px;
+          opacity: 1;
+        }
+      }
+
+      &:hover {
+
+      }
+
+      &#dani {
+        background: url('../pictures/dani.jpg') no-repeat center center;
+        background-size: cover;
+
+        .greeting {
+          background-color: rgba(61, 49, 117, 0.50);
+        }
+      }
+
+      &#sharon {
+        background: url('../pictures/sharon.jpg') no-repeat center center;
+        background-size: cover;
+
+        .greeting {
+          background-color: rgba(36, 107, 97, 0.5);
+        }
+      }
+
+      &#bowie {
+        background: url('../pictures/bowie.jpg') no-repeat center center;
+        background-size: cover;
+
+        .greeting {
+          background-color: rgba(231, 158, 19, 0.5);
+        }
+      }
+    }
+
     .description {
       color: #fff;
     }
@@ -229,7 +348,7 @@ section#gallery {
   flex-direction: column;
 
   .overlay {
-    background: linear-gradient(190deg, $dark-green, $dark-yellow);
+    background: linear-gradient(185deg, $dark-green, $dark-blue);
   }
 
   .polaroid-images {
@@ -311,17 +430,16 @@ section#gallery {
 }
 
 section#contact {
+  color: #000;
 
   .overlay {
-    background: linear-gradient(190deg, $dark-green, $dark-purple);
+    background: linear-gradient(35deg, $light-purple, $light-yellow);
   }
 
   .form {
-    width: 50vw;
+    width: 80%;
     min-width: 400px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
+    z-index: 1;
 
     .form-field {
       display: flex;
@@ -361,12 +479,10 @@ section#contact {
       justify-content: flex-end;
 
       input[type="submit"] {
-        background-color: transparent;
-        color: black;
-        border: 2px solid black;
+        border: none;
         cursor: pointer;
         font-size: 1.2em;
-        padding: 4px 8px;
+        font-family: $primary-font;
       }
     }
   }
@@ -375,23 +491,42 @@ section#contact {
 .button {
   padding: 10px 20px;
   border-radius: 2px;
-  color: #fff;
   text-decoration: none;
   margin: 10px;
+  transition: all 0.5s ease-in-out;
+
+  a {
+    color: #fff !important;
+    &:visited {
+      color: #fff !important;
+    }
+  }
 
   &.purple {
     background: $dark-purple;
+    &:hover {
+      background: $med-purple;
+    }
   }
 
   &.green {
     background: $dark-green;
+    &:hover {
+      background: $light-green;
+    }
   }
 
   &.blue {
     background: $dark-blue;
+    &:hover {
+      background: $light-blue;
+    }
   }
 
   &.yellow {
     background: $dark-yellow;
+    &:hover {
+      background: $light-yellow;
+    }
   }
 }
