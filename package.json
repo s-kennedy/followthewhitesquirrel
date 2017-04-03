@@ -4,7 +4,7 @@
   "description": "Camping and hiking tours in Ontario",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-dist": "handlebars templates/**.handlebars -f js/hbs.js && sass sass/styles.scss css/styles.css"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,7 @@
   "homepage": "https://github.com/s-kennedy/followthewhitesquirrel#readme",
   "dependencies": {
     "handlebars": "^4.0.6",
-    "node-polyglot": "^2.2.2"
-  },
-  "scripts": {
-    "build-dist": "handlebars templates/**.handlebars -f js/hbs.js && sass sass/styles.scss css/styles.css"
+    "node-polyglot": "^2.2.2",
+    "smooth-scroll": "github:cferdinandi/smooth-scroll"
   }
 }

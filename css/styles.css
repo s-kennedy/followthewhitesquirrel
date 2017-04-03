@@ -37,14 +37,22 @@ section {
     padding: 20px; }
 
 footer {
-  color: #fffffb;
-  background-color: #000;
-  padding: 20px;
+  background: url("../pictures/barca.jpg") no-repeat center bottom fixed;
+  color: #ffffff;
   text-align: center;
-  margin-top: 60px;
   position: relative;
   bottom: 0;
   display: inline-block; }
+  footer span, footer i {
+    margin: 0 20px; }
+  footer .overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    position: absolute;
+    background: linear-gradient(35deg, #E79E13, #246B61, #3D3175); }
+  footer .content {
+    position: relative; }
 
 h1, h2, h3, h2, h5 {
   color: #fff;
@@ -69,11 +77,9 @@ a {
   text-align: center;
   z-index: 1; }
 
-.title-underline-white {
-  border-bottom: 5px solid #fff; }
-
 .title-dark {
-  color: #3D3175; }
+  color: #3D3175;
+  margin: 0.6em; }
 
 section#landing {
   color: #fff;
@@ -128,7 +134,7 @@ section#camping {
   section#camping a:not(.button) {
     color: #3D3175; }
     section#camping a:not(.button):visited {
-      color: #712F79; }
+      color: #5E5292; }
 
 section#hiking {
   background: url("../pictures/paseo.jpg") no-repeat center center fixed;
@@ -168,6 +174,7 @@ section#pricing {
     flex-direction: row; }
   section#pricing .pricing {
     flex-grow: 1;
+    flex-basis: 33%;
     padding: 20px; }
     section#pricing .pricing h2 {
       margin: 0;
@@ -187,7 +194,7 @@ section#team {
     width: 100%;
     max-width: 100%; }
   section#team .overlay {
-    background: linear-gradient(190deg, #246B61, #3D3175); }
+    background: linear-gradient(35deg, #246B61, #2D4671); }
   section#team .team-members {
     display: flex;
     flex-direction: row; }
@@ -195,6 +202,7 @@ section#team {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 20px; }
     section#team .member .team-picture, section#team .member .greeting {
       border-radius: 50%;
@@ -297,7 +305,7 @@ section#gallery {
 section#contact {
   color: #000; }
   section#contact .overlay {
-    background: linear-gradient(35deg, #712F79, #FECE0A); }
+    background: linear-gradient(35deg, #5E5292, #FECE0A); }
   section#contact .form {
     width: 80%;
     min-width: 400px;
@@ -332,7 +340,8 @@ section#contact {
         border: none;
         cursor: pointer;
         font-size: 1.2em;
-        font-family: "Slabo 27px", Helvetica, sans-serif; }
+        font-family: "Slabo 27px", Helvetica, sans-serif;
+        color: #fff; }
 
 .button {
   padding: 10px 20px;
@@ -347,7 +356,7 @@ section#contact {
   .button.purple {
     background: #3D3175; }
     .button.purple:hover {
-      background: #A7A5C6; }
+      background: #5E5292; }
   .button.green {
     background: #246B61; }
     .button.green:hover {

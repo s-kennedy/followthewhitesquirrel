@@ -10,8 +10,8 @@ EN_CONTENT = {
     explanation: "We offer personalized tours to Ontario's best wilderness spots. We can take you to the classic destinations like Algonquin Park or the Niagara Escarpment, or we can show you some hidden gems.",
     hikingOrCamping: "What do you want to do?",
     actions: [
-      { anchor: "Hiking", url: '#hiking' },
-      { anchor: "Camping", url: '#camping' },
+      { anchor: "Hiking", url: '#hiking', btnColour: 'green' },
+      { anchor: "Camping", url: '#camping', btnColour: 'purple' },
     ],
   },
   camping: {
@@ -64,7 +64,7 @@ EN_CONTENT = {
           included: "What's included?",
           items: [
             { label: "Transportation to and from the park" },
-            { label: "Tent, sleeping bags, sleeping pads and other camping equipement" },
+            { label: "Tent, sleeping bags, sleeping pads and other camping equipment" },
             { label: "All meals from dinner on Friday to lunch on Sunday" },
             { label: "Canoe rentals (2 people in a canoe)" },
           ]
@@ -87,14 +87,14 @@ EN_CONTENT = {
       {
         name: "custom",
         price: "¯\\_(ツ)_/¯",
-        title: "Build your own trip",
+        title: "Build your own custom trip",
         offer: {
           included: "What's included?",
           items: [
-            { label: "Transportation from your doorstep (anywhere in the GTA)" },
-            { label: "Packed lunch and snacks for the afternoon" },
-            { label: "Trail guide for the Bruce Trail" },
-            { label: "Visit to Niagara Falls" },
+            { label: "We'll help you plan your dream trip" },
+            { label: "Ask us about our alternative destinations" },
+            { label: "Transportation and equipment as needed" },
+            { label: "Negotiable pricing" },
           ]
         },
       },

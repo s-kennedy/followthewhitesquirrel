@@ -18,7 +18,7 @@ templates['camping'] = template({"1":function(container,depth0,helpers,partials,
 },"3":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "          <a href=\""
+  return "          <a data-scroll href=\""
     + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
     + "\" class=\"button yellow\">"
     + alias4(((helper = (helper = helpers.anchor || (depth0 != null ? depth0.anchor : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"anchor","hash":{},"data":data}) : helper)))
@@ -47,9 +47,9 @@ templates['camping'] = template({"1":function(container,depth0,helpers,partials,
 templates['contact'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "<div class=\"overlay\"></div>\n<div class=\"content\">\n  <div class=\"form\">\n  <h1 class=\"headline title-dark\">"
+  return "<div class=\"overlay\"></div>\n<div class=\"content\">\n  <h1 class=\"headline title-dark\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.contactUs : stack1), depth0))
-    + "</h1>\n    <form action=\"https://script.google.com/macros/s/AKfycbxb2hQxFXnKvKA67YG2YngTv5zLea5mPjsIecjslySsOG_X7_xp/exec\">\n      <div class=\"form-field\">\n        <label for=\"name\">"
+    + "</h1>\n  <div class=\"form\">\n    <form id=\"contact-form\">\n      <div class=\"form-field\">\n        <label for=\"name\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.name : stack1), depth0))
     + "</label>\n        <input type=\"text\" name=\"name\">\n      </div>\n      <div class=\"form-field\">\n        <label for=\"email\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.email : stack1), depth0))
@@ -61,7 +61,7 @@ templates['contact'] = template({"compiler":[7,">= 4.0.0"],"main":function(conta
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.message : stack1), depth0))
     + "</label>\n        <textarea name=\"message\"></textarea>\n      </div>\n      <div class=\"submit\">\n        <input type=\"submit\" name="
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.submit : stack1), depth0))
-    + " class=\"button yellow\">\n      </div>\n    </form>\n  </div>\n</div>";
+    + " class=\"button purple\">\n      </div>\n    </form>\n  </div>\n</div>";
 },"useData":true});
 templates['gallery'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
@@ -91,7 +91,7 @@ templates['hiking'] = template({"1":function(container,depth0,helpers,partials,d
 },"3":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "          <a href=\""
+  return "          <a data-scroll href=\""
     + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
     + "\" class=\"button yellow\">"
     + alias4(((helper = (helper = helpers.anchor || (depth0 != null ? depth0.anchor : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"anchor","hash":{},"data":data}) : helper)))
@@ -122,9 +122,11 @@ templates['hiking'] = template({"1":function(container,depth0,helpers,partials,d
 templates['intro'] = template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "        <a href=\""
+  return "        <a data-scroll href=\""
     + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"url","hash":{},"data":data}) : helper)))
-    + "\" class=\"button blue option\">"
+    + "\" class=\"button "
+    + alias4(((helper = (helper = helpers.btnColour || (depth0 != null ? depth0.btnColour : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"btnColour","hash":{},"data":data}) : helper)))
+    + "\">"
     + alias4(((helper = (helper = helpers.anchor || (depth0 != null ? depth0.anchor : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"anchor","hash":{},"data":data}) : helper)))
     + "</a>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -162,7 +164,7 @@ templates['pricing'] = template({"1":function(container,depth0,helpers,partials,
     + alias4(container.lambda(((stack1 = (depth0 != null ? depth0.offer : depth0)) != null ? stack1.included : stack1), depth0))
     + "</h4>\n          <ul class=\"included\">\n"
     + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.offer : depth0)) != null ? stack1.items : stack1),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "          </ul>\n          <div class=\"action\">\n            <a href=\"#contact\" class=\"button yellow\">Book it</a>\n          </div>\n        </div>\n";
+    + "          </ul>\n          <div class=\"action\">\n            <a data-scroll href=\"#contact\" class=\"button yellow\">Book it</a>\n          </div>\n        </div>\n";
 },"2":function(container,depth0,helpers,partials,data) {
     var helper;
 
