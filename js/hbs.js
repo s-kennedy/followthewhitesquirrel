@@ -70,17 +70,17 @@ templates['gallery'] = template({"compiler":[7,">= 4.0.0"],"main":function(conta
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.gallery : depth0)) != null ? stack1.headline : stack1), depth0))
     + "</h1>\n\n  <div class=\"polaroid-images\">\n    <a href=\"\" title="
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.gallery : depth0)) != null ? stack1.baseCamp : stack1), depth0))
-    + "><img height=\"180\" src=\"pictures/tienda.jpg\" alt=\"tent\" /></a>\n    <a href=\"\" title="
+    + "><img height=\"180\" src=\"images/tienda.jpg\" alt=\"tent\" /></a>\n    <a href=\"\" title="
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.gallery : depth0)) != null ? stack1.reflections : stack1), depth0))
-    + "><img height=\"180\" src=\"pictures/paisaje.jpg\" alt=\"reflections\"/></a>\n    <a href=\"\" title="
+    + "><img height=\"180\" src=\"images/paisaje.jpg\" alt=\"reflections\"/></a>\n    <a href=\"\" title="
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.gallery : depth0)) != null ? stack1.morning : stack1), depth0))
-    + "><img height=\"180\" src=\"pictures/morning.jpg\" alt=\"morning\"/></a>\n    <a href=\"\" title="
+    + "><img height=\"180\" src=\"images/morning.jpg\" alt=\"morning\"/></a>\n    <a href=\"\" title="
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.gallery : depth0)) != null ? stack1.canoes : stack1), depth0))
-    + "><img height=\"180\" src=\"pictures/canoa.jpg\" alt=\"canoe\"/></a>\n    <a href=\"\" title="
+    + "><img height=\"180\" src=\"images/canoa.jpg\" alt=\"canoe\"/></a>\n    <a href=\"\" title="
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.gallery : depth0)) != null ? stack1.hike : stack1), depth0))
-    + "><img height=\"180\" src=\"pictures/paseo.jpg\" alt=\"walking\"/></a>\n    <a href=\"\" title="
+    + "><img height=\"180\" src=\"images/paseo.jpg\" alt=\"walking\"/></a>\n    <a href=\"\" title="
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.gallery : depth0)) != null ? stack1.sharonDani : stack1), depth0))
-    + "><img height=\"180\" src=\"pictures/sharonanddani.jpg\" alt=\"Sharon and Dani\"/></a>\n  </div>\n</div>";
+    + "><img height=\"180\" src=\"images/sharonanddani.jpg\" alt=\"Sharon and Dani\"/></a>\n  </div>\n</div>";
 },"useData":true});
 templates['hiking'] = template({"1":function(container,depth0,helpers,partials,data) {
     var helper;
