@@ -72,7 +72,7 @@ EN_CONTENT = {
       },
       {
         name: "hiking",
-        price: "$150",
+        price: "$100",
         title: "Day hike and Niagara Falls",
         offer: {
           included: "What's included?",
@@ -86,7 +86,7 @@ EN_CONTENT = {
       },
       {
         name: "custom",
-        price: "¯\\_(ツ)_/¯",
+        price: "TBD",
         title: "Build your own custom trip",
         offer: {
           included: "What's included?",
@@ -137,11 +137,22 @@ EN_CONTENT = {
   },
   contact: {
     contactUs: "Contact us",
+    interestedIn:"I'm interested in:",
+    hiking: "Day hike in Niagara",
+    camping: "Weekend camping in Algonquin",
+    custom: "Custom adventure",
     name: "Name:",
     email: "Email address:",
     departure: "Departure date:",
     return: "Return date:",
-    message: "What kind of adventure do you want to go on?",
+    message: "Tell us more about what you'd like to do.",
     submit: "Send!",
+  },
+  footer: {
+    headline: 'Follow the White Squirrel',
+    phone: '(647) 898-1710',
+    facebook: 'https://www.facebook.com/Follow-the-White-Squirrel-1878632915745652/',
+    twitter: 'https://twitter.com/f_t_w_s',
+    instagram: 'https://www.instagram.com/esunabonabota/',
   }
 }

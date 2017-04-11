@@ -49,19 +49,42 @@ templates['contact'] = template({"compiler":[7,">= 4.0.0"],"main":function(conta
 
   return "<div class=\"overlay\"></div>\n<div class=\"content\">\n  <h1 class=\"headline title-dark\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.contactUs : stack1), depth0))
-    + "</h1>\n  <div class=\"form\">\n    <form id=\"contact-form\">\n      <div class=\"form-field\">\n        <label for=\"name\">"
+    + "</h1>\n  <div class=\"form\">\n    <form id=\"contact-form\">\n      <div class=\"form-field\">\n        <label for=\"products\">"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.interestedIn : stack1), depth0))
+    + "</label>\n        <div class=\"products\">\n          <div>\n            <label for=\"hiking\">"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.hiking : stack1), depth0))
+    + "</label>\n            <input type=\"checkbox\" name=\"hiking\">\n          </div>\n          <div>\n            <label for=\"camping\">"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.camping : stack1), depth0))
+    + "</label>\n            <input type=\"checkbox\" name=\"camping\">\n          </div>\n          <div>\n            <label for=\"camping\">"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.custom : stack1), depth0))
+    + "</label>\n            <input type=\"checkbox\" name=\"custom\">\n          </div>\n        </div>\n      </div>\n      <div class=\"form-field\">\n        <label for=\"name\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.name : stack1), depth0))
     + "</label>\n        <input type=\"text\" name=\"name\">\n      </div>\n      <div class=\"form-field\">\n        <label for=\"email\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.email : stack1), depth0))
-    + "</label>\n        <input type=\"email\" name=\"email\">\n      </div>\n      <div class=\"form-field\">\n        <label for=\"departure-date\">"
+    + "</label>\n        <input type=\"email\" name=\"email\">\n      </div>\n      <div class=\"trip-dates\">\n        <div class=\"form-field\" id=\"departure-date\">\n          <label for=\"departure-date\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.departure : stack1), depth0))
-    + "</label>\n        <input type=\"date\" name=\"departure-date\">\n      </div>\n      <div class=\"form-field\">\n        <label for=\"return-date\">"
+    + "</label>\n          <input type=\"text\" name=\"departure-date\" class=\"date-picker\">\n        </div>\n        <div class=\"form-field\" id=\"return-date\">\n          <label for=\"return-date\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1["return"] : stack1), depth0))
-    + "</label>\n        <input type=\"date\" name=\"return-date\">\n      </div>\n      <div class=\"form-field\">\n        <label for=\"message\">"
+    + "</label>\n          <input type=\"text\" name=\"return-date\" class=\"date-picker\">\n        </div>\n      </div>\n      <div class=\"form-field\">\n        <label for=\"message\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.message : stack1), depth0))
     + "</label>\n        <textarea name=\"message\"></textarea>\n      </div>\n      <div class=\"submit\">\n        <input type=\"submit\" name="
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.submit : stack1), depth0))
     + " class=\"button purple\">\n      </div>\n    </form>\n  </div>\n</div>";
+},"useData":true});
+templates['footer'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+
+  return "<div class=\"overlay\"></div>\n<div class=\"content\">\n  <h4>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.headline : stack1), depth0))
+    + "</h4>\n  <div class=\"contact-info\">\n    <p>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.phone : stack1), depth0))
+    + "</p>\n    <p>\n      <a href="
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.twitter : stack1), depth0))
+    + "><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a>\n      <a href="
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.facebook : stack1), depth0))
+    + "><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a>\n      <a href="
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.instagram : stack1), depth0))
+    + "><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a>\n    </p>\n  </div>\n</div>\n";
 },"useData":true});
 templates['gallery'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;

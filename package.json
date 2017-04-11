@@ -24,6 +24,7 @@
   "dependencies": {
     "handlebars": "^4.0.6",
     "node-polyglot": "^2.2.2",
+    "pikaday": "^1.5.1",
     "smooth-scroll": "github:cferdinandi/smooth-scroll"
   }
 }

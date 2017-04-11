@@ -4,6 +4,23 @@
   <div class="form">
     <form id="contact-form">
       <div class="form-field">
+        <label for="products">{{contact.interestedIn}}</label>
+        <div class="products">
+          <div>
+            <label for="hiking">{{contact.hiking}}</label>
+            <input type="checkbox" name="hiking">
+          </div>
+          <div>
+            <label for="camping">{{contact.camping}}</label>
+            <input type="checkbox" name="camping">
+          </div>
+          <div>
+            <label for="camping">{{contact.custom}}</label>
+            <input type="checkbox" name="custom">
+          </div>
+        </div>
+      </div>
+      <div class="form-field">
         <label for="name">{{contact.name}}</label>
         <input type="text" name="name">
       </div>
@@ -11,13 +28,15 @@
         <label for="email">{{contact.email}}</label>
         <input type="email" name="email">
       </div>
-      <div class="form-field">
-        <label for="departure-date">{{contact.departure}}</label>
-        <input type="date" name="departure-date">
-      </div>
-      <div class="form-field">
-        <label for="return-date">{{contact.return}}</label>
-        <input type="date" name="return-date">
+      <div class="trip-dates">
+        <div class="form-field" id="departure-date">
+          <label for="departure-date">{{contact.departure}}</label>
+          <input type="text" name="departure-date" class="date-picker">
+        </div>
+        <div class="form-field" id="return-date">
+          <label for="return-date">{{contact.return}}</label>
+          <input type="text" name="return-date" class="date-picker">
+        </div>
       </div>
       <div class="form-field">
         <label for="message">{{contact.message}}</label>

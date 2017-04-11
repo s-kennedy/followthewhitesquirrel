@@ -454,6 +454,21 @@ section#contact {
     min-width: 400px;
     z-index: 1;
 
+    .products, .trip-dates {
+      display: flex;
+      justify-content: space-between;
+
+      input.date-picker {
+        width: 100%;
+      }
+    }
+
+    .trip-dates {
+      .form-field {
+        flex-basis: 49%;
+      }
+    }
+
     .form-field {
       display: flex;
       flex-direction: column;

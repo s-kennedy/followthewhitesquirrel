@@ -310,6 +310,13 @@ section#contact {
     width: 80%;
     min-width: 400px;
     z-index: 1; }
+    section#contact .form .products, section#contact .form .trip-dates {
+      display: flex;
+      justify-content: space-between; }
+      section#contact .form .products input.date-picker, section#contact .form .trip-dates input.date-picker {
+        width: 100%; }
+    section#contact .form .trip-dates .form-field {
+      flex-basis: 49%; }
     section#contact .form .form-field {
       display: flex;
       flex-direction: column;
