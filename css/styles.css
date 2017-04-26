@@ -250,7 +250,7 @@ section#gallery {
     justify-content: center; }
   section#gallery .polaroid-images a {
     background: white;
-    display: inline;
+    display: table;
     float: right;
     background-repeat: round;
     margin: 0 15px 30px;
