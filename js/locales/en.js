@@ -5,9 +5,9 @@ EN_CONTENT = {
     question: "Do you want to get out into nature?",
   },
   intro: {
-    mission: "Our mission as an adventurous little family is to bring Canadians and visitors the opportunity to explore the wilderness of Ontario far from the concrete but closer to people and nature. Where we belong.",
     invitation: "Let's go on a trip.",
-    explanation: "We offer personalized tours to Ontario's best wilderness spots. We can take you to the classic destinations like Algonquin Park or the Niagara Escarpment, or we can show you some hidden gems.",
+    mission: "Our mission is make it easier for anyone to explore the wilderness of Ontario, far from the concrete and closer to people and nature.",
+    explanation: "We'll guide you on a personalized trip to one of Ontario's best outdoor spots. We do multi-day backcountry camping trips in Algonquin Park and day hikes on the Niagara Escarpment. You don't need any experience or equipment, just sunscreen and some curiosity.",
     hikingOrCamping: "What do you want to do?",
     actions: [
       { anchor: "Hiking", url: '#hiking', btnColour: 'green' },
@@ -23,7 +23,7 @@ EN_CONTENT = {
       whatWeOffer: "What we offer:",
       items: [
         { label: "Transportation to and from the park" },
-        { label: "Tent, sleeping bags, sleeping pads and other camping equipement" },
+        { label: "Tent, sleeping bags, sleeping pads and other camping equipment" },
         { label: "All meals from dinner on Friday to lunch on Sunday" },
         { label: "Canoe rentals (2 people in a canoe)" },
       ]
@@ -37,7 +37,7 @@ EN_CONTENT = {
     headline: "Hiking sounds good!",
     price: "$150",
     product: "Day trip to Niagara",
-    description: "Our typical day trip is a 10km hike along the <a href='http://www.escarpment.org/home/index.php'>Niagara Escarpment</a> with a stop for lunch at <a href=http://www.cityofwaterfalls.ca/felkers-falls/''>Felker's Falls</a>. We can then take you for a visit to <a href='https://www.niagarafallstourism.com/'>Niagara Falls</a> or a tour of <a href='http://winecountryontario.ca/'>Niagara wineries</a>. We usually leave Toronto at 10am and return at 6pm, but the schedule is flexible.",
+    description: "Our typical day trip is a 10km hike along the <a href='http://www.escarpment.org/home/index.php'>Niagara Escarpment</a> with a stop for lunch at <a href=http://www.cityofwaterfalls.ca/felkers-falls/''>Felker's Falls</a>. We can then take you for a visit to <a href='https://www.niagarafallstourism.com/'>Niagara Falls</a> or a tour of <a href='http://winecountryontario.ca/'>Niagara wineries</a>. We usually leave Toronto at 10am and return at 7pm, but the schedule is flexible.",
     offer: {
       whatWeOffer: "What we offer:",
       items: [
@@ -58,7 +58,8 @@ EN_CONTENT = {
     products: [
       {
         name: "camping",
-        price: "$400",
+        price: "$390",
+        hst: "+ HST",
         title: "Weekend in Algonquin Park",
         offer: {
           included: "What's included?",
@@ -72,7 +73,8 @@ EN_CONTENT = {
       },
       {
         name: "hiking",
-        price: "$100",
+        price: "$90",
+        hst: '+ HST',
         title: "Day hike and Niagara Falls",
         offer: {
           included: "What's included?",
@@ -86,7 +88,8 @@ EN_CONTENT = {
       },
       {
         name: "custom",
-        price: "TBD",
+        price: "Call us",
+        hst: '',
         title: "Build your own custom trip",
         offer: {
           included: "What's included?",
@@ -124,16 +127,17 @@ EN_CONTENT = {
         bio: "Bowie is originally from Tennesse, USA. He is guaranteed to make you smile. He was rescued from a kill shelter and has since gone on to become the CEO of this company. Stay humble, Bowie.",
         languages: "Bowie speaks Dog and Esperanto.",
       },
-    ]
+    ],
+    firstAid: "Sharon and Dani both have a valid Wilderness and Remote First Aid certification from the Red Cross."
   },
   gallery: {
     headline: "Gallery",
-    baseCamp: "Base Camp",
+    baseCamp: "Tents",
     reflections: "Reflections",
-    morning: "Good Morning",
+    morning: "Morning",
     canoes: "Canoes",
-    hike: "Going for a walk",
-    sharonDani: "Sharon and Dani",
+    hike: "Hiking",
+    sharonDani: "Hi!",
   },
   contact: {
     contactUs: "Contact us",
