@@ -118,7 +118,7 @@ section#landing {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  justify-content: flex-end;
+  justify-content: center;
 
   .overlay {
     background: linear-gradient(35deg, $dark-yellow, $dark-green, $dark-purple);
@@ -126,7 +126,7 @@ section#landing {
 
   .content {
     height: inherit;
-    justify-content: flex-end;
+    justify-content: space-around;
   }
 
   .ftws {
@@ -246,10 +246,12 @@ section#pricing {
     flex-grow: 1;
     flex-basis: 33%;
     padding: 20px;
+    min-width: 100px;
 
-    h2 {
+    h2, h4.hst {
       margin: 0;
       color: $light-yellow;
+      text-align: center;
     }
   }
 
@@ -368,9 +370,12 @@ section#gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
 
-  .polaroid-images {
+    img {
+      display: block;
+      width: inherit;
+    }
+
     a {
       background: white;
       display: inline;
@@ -411,12 +416,7 @@ section#gallery {
       box-shadow: 0 10px 20px rgba(0,0,0,.7);
     }
 
-    img {
-      display: block;
-      width: inherit;
-    }
-
-    a:nth-child(2n) {
+    a:nth-child(2n), a:nth-child(6n) {
       -webkit-transform: rotate(4deg);
       -moz-transform: rotate(4deg);
       transform: rotate(4deg);
@@ -556,6 +556,44 @@ section#contact {
     background: $dark-yellow;
     &:hover {
       background: $light-yellow;
+    }
+  }
+}
+
+@media screen and (max-device-width: 930px) {
+  section#team {
+    .team-members {
+      display: block;
+    }
+  }
+
+  section#pricing  {
+    .pricing-columns {
+      display: block;
+    }
+
+    .pricing.camping, .pricing.hiking {
+      border-right: none !important;
+      border-bottom: 1px solid rgba(255,255,255,0.7);;
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  section#team {
+    .team-members {
+      display: block;
+    }
+  }
+
+  section#pricing  {
+    .pricing-columns {
+      display: block;
+    }
+
+    .pricing.camping, .pricing.hiking {
+      border-right: none !important;
+      border-bottom: 1px solid rgba(255,255,255,0.7);;
     }
   }
 }
