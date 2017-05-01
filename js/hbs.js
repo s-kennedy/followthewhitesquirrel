@@ -79,11 +79,11 @@ templates['footer'] = template({"compiler":[7,">= 4.0.0"],"main":function(contai
     + "</h4>\n  <div class=\"contact-info\">\n    <p>"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.phone : stack1), depth0))
     + "</p>\n    <p>\n      <a href="
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.twitter : stack1), depth0))
+    + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.twitter : stack1), depth0)) != null ? stack1 : "")
     + "><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a>\n      <a href="
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.facebook : stack1), depth0))
+    + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.facebook : stack1), depth0)) != null ? stack1 : "")
     + "><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a>\n      <a href="
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.instagram : stack1), depth0))
+    + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.instagram : stack1), depth0)) != null ? stack1 : "")
     + "><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a>\n    </p>\n  </div>\n</div>\n";
 },"useData":true});
 templates['gallery'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -214,7 +214,7 @@ templates['team'] = template({"1":function(container,depth0,helpers,partials,dat
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.team : depth0)) != null ? stack1.headline : stack1), depth0))
     + "</h1>\n    <div class=\"team-members\">\n"
     + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0.team : depth0)) != null ? stack1.members : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "    </div>\n    <div>\n      <p>"
+    + "    </div>\n    <div class='first-aid'>\n      <p>"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.team : depth0)) != null ? stack1.firstAid : stack1), depth0))
     + "</p>\n    </div>\n  </div>\n</div>";
 },"useData":true});
