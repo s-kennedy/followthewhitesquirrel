@@ -60,8 +60,8 @@ EN_CONTENT = {
       {
         name: "camping",
         price: "$390",
-        hst: "+ HST",
-        title: "Weekend in Algonquin Park",
+        hst: "+ HST, per person",
+        title: "Adventure in Algonquin Park",
         offer: {
           included: "What's included?",
           items: [
@@ -75,7 +75,7 @@ EN_CONTENT = {
       {
         name: "hiking",
         price: "$90",
-        hst: '+ HST',
+        hst: '+ HST, per person',
         title: "Day hike and Niagara Falls",
         offer: {
           included: "What's included?",
