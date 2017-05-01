@@ -38,6 +38,7 @@ section {
 
 footer {
   background: url("../images/barca.jpg") no-repeat center bottom fixed;
+  background-size: cover;
   color: #ffffff;
   text-align: center;
   position: relative;
@@ -89,12 +90,12 @@ section#landing {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  justify-content: flex-end; }
+  justify-content: center; }
   section#landing .overlay {
     background: linear-gradient(35deg, #E79E13, #246B61, #3D3175); }
   section#landing .content {
     height: inherit;
-    justify-content: flex-end; }
+    justify-content: space-around; }
   section#landing .ftws {
     position: absolute;
     top: 0;
@@ -175,10 +176,12 @@ section#pricing {
   section#pricing .pricing {
     flex-grow: 1;
     flex-basis: 33%;
-    padding: 20px; }
-    section#pricing .pricing h2 {
+    padding: 20px;
+    min-width: 100px; }
+    section#pricing .pricing h2, section#pricing .pricing h4.hst {
       margin: 0;
-      color: #FECE0A; }
+      color: #FECE0A;
+      text-align: center; }
   section#pricing .action {
     display: flex;
     justify-content: center; }
@@ -239,6 +242,8 @@ section#team {
     section#team .member img {
       max-width: 100%;
       height: auto; }
+  section#team .first-aid {
+    text-align: center; }
 
 section#gallery {
   flex-direction: column; }
@@ -248,6 +253,7 @@ section#gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
+
   section#gallery .polaroid-images a {
     background: white;
     display: table;
@@ -301,6 +307,7 @@ section#gallery {
     -webkit-transform: rotate(-18deg);
     -moz-transform: rotate(-18deg);
     transform: rotate(-18deg); }
+
 
 section#contact {
   color: #000; }
@@ -376,5 +383,24 @@ section#contact {
     background: #E79E13; }
     .button.yellow:hover {
       background: #FECE0A; }
+
+@media screen and (max-device-width: 930px) {
+  section#team .team-members {
+    display: block; }
+
+  section#pricing .pricing-columns {
+    display: block; }
+  section#pricing .pricing.camping, section#pricing .pricing.hiking {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7); } }
+@media screen and (max-width: 930px) {
+  section#team .team-members {
+    display: block; }
+
+  section#pricing .pricing-columns {
+    display: block; }
+  section#pricing .pricing.camping, section#pricing .pricing.hiking {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7); } }
 
 /*# sourceMappingURL=styles.css.map */
