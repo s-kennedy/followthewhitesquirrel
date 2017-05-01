@@ -38,6 +38,7 @@ section {
 
 footer {
   background: url("../images/barca.jpg") no-repeat center bottom fixed;
+  background-size: cover;
   color: #ffffff;
   text-align: center;
   position: relative;
@@ -241,6 +242,8 @@ section#team {
     section#team .member img {
       max-width: 100%;
       height: auto; }
+  section#team .first-aid {
+    text-align: center; }
 
 section#gallery {
   flex-direction: column; }

@@ -16,16 +16,16 @@ EN_CONTENT = {
   },
   camping: {
     headline: "We love camping!",
-    price: "$400",
-    product: "Weekend in Algonquin Park",
-    description: "We'll plan a trip that fits your comfort level and preferences. Our typical excursion is a 2.5 day trip (Friday afternoon to Sunday evening) to <a href='http://www.algonquinpark.on.ca/'>Algonquin Park</a>.",
+    price: "$390",
+    product: "Adventure in Algonquin Park",
+    description: "Enjoy one of Canada's classic outdoor experiences, a backcountry camping trip in <a href='http://www.algonquinpark.on.ca/'>Algonquin Park</a>. Algonquin is Ontario's oldest and largest provincial park. We'll plan and guide you through a trip that fits your comfort level and preferences. Our typical excursion is a 3 day trip (Friday morning to Sunday evening) that includes three days of canoeing and two nights of backcountry camping. Beginners are welcome!",
     offer: {
       whatWeOffer: "What we offer:",
       items: [
         { label: "Transportation to and from the park" },
         { label: "Tent, sleeping bags, sleeping pads and other camping equipment" },
-        { label: "All meals from dinner on Friday to lunch on Sunday" },
-        { label: "Canoe rentals (2 people in a canoe)" },
+        { label: "All meals from lunch on Friday to lunch on Sunday" },
+        { label: "Canoe rental (2 people in a canoe)" },
       ]
     },
     customize: "If you want a more customized trip (longer, shorter, during the week...) let us know what you're looking for and we'll do our best to accommodate!",
@@ -35,14 +35,15 @@ EN_CONTENT = {
   },
   hiking: {
     headline: "Hiking sounds good!",
-    price: "$150",
+    price: "$90",
     product: "Day trip to Niagara",
-    description: "Our typical day trip is a 10km hike along the <a href='http://www.escarpment.org/home/index.php'>Niagara Escarpment</a> with a stop for lunch at <a href=http://www.cityofwaterfalls.ca/felkers-falls/''>Felker's Falls</a>. We can then take you for a visit to <a href='https://www.niagarafallstourism.com/'>Niagara Falls</a> or a tour of <a href='http://winecountryontario.ca/'>Niagara wineries</a>. We usually leave Toronto at 10am and return at 7pm, but the schedule is flexible.",
+    description: "You've probably heard of Niagara Falls. But did you know that the <a href='http://www.escarpment.org/home/index.php'>Niagara Escarpment</a> has many other waterfalls that can be accessed on foot? We'll start they day with a 10km hike along the Escarpment on the Bruce Trail with a stop for lunch at one of the beautiful waterfalls near Hamilton. One of our favourites is <a href='http://www.cityofwaterfalls.ca/felkers-falls/'>Felker's Falls</a>. We'll finish off the day with a tour of three different <a href='http://winecountryontario.ca/'>Niagara wineries</a> where you can relax after the hike with a few wine tastings.",
     offer: {
       whatWeOffer: "What we offer:",
       items: [
+        { label: "Day trip including a hike to a waterfall and a winery tour" },
         { label: "Transportation from your doorstep (anywhere in the GTA)" },
-        { label: "Packed lunch and snacks for the afternoon" },
+        { label: "Picnic lunch and snacks for the afternoon" },
         { label: "Trail guide for the Bruce Trail" },
         { label: "Flexible schedule" },
       ]
@@ -59,8 +60,8 @@ EN_CONTENT = {
       {
         name: "camping",
         price: "$390",
-        hst: "+ HST",
-        title: "Weekend in Algonquin Park",
+        hst: "+ HST, per person",
+        title: "Adventure in Algonquin Park",
         offer: {
           included: "What's included?",
           items: [
@@ -74,7 +75,7 @@ EN_CONTENT = {
       {
         name: "hiking",
         price: "$90",
-        hst: '+ HST',
+        hst: '+ HST, per person',
         title: "Day hike and Niagara Falls",
         offer: {
           included: "What's included?",
@@ -155,8 +156,8 @@ EN_CONTENT = {
   footer: {
     headline: 'Follow the White Squirrel',
     phone: '(647) 898-1710',
-    facebook: 'https://www.facebook.com/Follow-the-White-Squirrel-1878632915745652/',
+    facebook: 'https://www.facebook.com/followthewhitesquirrel',
     twitter: 'https://twitter.com/f_t_w_s',
-    instagram: 'https://www.instagram.com/esunabonabota/',
+    instagram: 'https://www.instagram.com/esunabonabota',
   }
 }
