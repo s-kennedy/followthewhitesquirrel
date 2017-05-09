@@ -155,7 +155,9 @@ EN_CONTENT = {
   },
   footer: {
     headline: 'Follow the White Squirrel',
-    phone: '(647) 898-1710',
+    email: 'hola@followthewhitesquirrel.ca',
+    phone_en: '(647) 898-1710',
+    phone_es: '(647) 928-3095',
     facebook: 'https://www.facebook.com/followthewhitesquirrel',
     twitter: 'https://twitter.com/f_t_w_s',
     instagram: 'https://www.instagram.com/esunabonabota',
