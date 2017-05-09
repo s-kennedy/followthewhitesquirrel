@@ -74,17 +74,19 @@ templates['contact'] = template({"compiler":[7,">= 4.0.0"],"main":function(conta
 templates['footer'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "<div class=\"overlay\"></div>\n<div class=\"content\">\n  <h4>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.headline : stack1), depth0))
-    + "</h4>\n  <div class=\"contact-info\">\n    <p>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.phone : stack1), depth0))
-    + "</p>\n    <p>\n      <a href="
+  return "<div class=\"overlay\"></div>\n<div class=\"content\">\n  <div class=\"contact-info\">\n    <p>\n      <a href="
     + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.twitter : stack1), depth0)) != null ? stack1 : "")
     + "><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a>\n      <a href="
     + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.facebook : stack1), depth0)) != null ? stack1 : "")
     + "><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a>\n      <a href="
     + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.instagram : stack1), depth0)) != null ? stack1 : "")
-    + "><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a>\n    </p>\n  </div>\n</div>\n";
+    + "><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a>\n    </p>\n    <p><a href=\"mailto:"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.email : stack1), depth0))
+    + "\">"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.email : stack1), depth0))
+    + "</a></p>\n    <p>"
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.phone_en : stack1), depth0))
+    + "</p>\n    <small>Copyright 2017</small>\n  </div>\n</div>\n";
 },"useData":true});
 templates['gallery'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
