@@ -93,7 +93,7 @@ templates['gallery'] = template({"compiler":[7,">= 4.0.0"],"main":function(conta
 
   return "<div class=\"overlay\"></div>\n<div class=\"content\">\n  <h1 class=\"headline\">"
     + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.gallery : depth0)) != null ? stack1.headline : stack1), depth0))
-    + "</h1>\n\n  <div class=\"polaroid-images\">\n    <a href=\"\" title=\"Base camp\"><img height=\"180\" src=\"images/camping.jpg\" alt=\"tent\" /></a>\n    <a href=\"\" title=\"Reflections\"><img height=\"180\" src=\"images/paisaje.jpg\" alt=\"reflections\"/></a>\n    <a href=\"\" title=\"Good morning!\"><img height=\"180\" src=\"images/morning.jpg\" alt=\"morning\"/></a>\n    <a href=\"\" title=\"Canoeing at dusk\"><img height=\"180\" src=\"images/canoa.jpg\" alt=\"canoe\"/></a>\n    <a href=\"\" title=\"A walk in the woods\"><img height=\"180\" src=\"images/paseo.jpg\" alt=\"walking\"/></a>\n    <a href=\"\" title=\"Sharon and Dani\"><img height=\"180\" src=\"images/pilgrims.jpg\" alt=\"Sharon and Dani\"/></a>\n  </div>\n</div>";
+    + "</h1>\n\n  <div class=\"polaroid-images\">\n    <a href=\"\" title=\"Base camp\"><img height=\"180\" src=\"images/camping.jpg\" alt=\"tent\" /></a>\n    <a href=\"\" title=\"Reflections\"><img height=\"180\" src=\"images/paisaje.jpg\" alt=\"reflections\"/></a>\n    <a href=\"\" title=\"Good morning!\"><img height=\"180\" src=\"images/morning.jpg\" alt=\"morning\"/></a>\n    <a href=\"\" title=\"Canoeing at dusk\"><img height=\"180\" src=\"images/canoa.jpg\" alt=\"canoe\"/></a>\n    <a href=\"\" title=\"A walk in the woods\"><img height=\"180\" src=\"images/paseo.jpg\" alt=\"walking\"/></a>\n    <a href=\"\" title=\"Sharon and Dani\"><img height=\"180\" src=\"images/pilgrims.jpg\" alt=\"Sharon and Dani\"/></a>\n  </div>\n</div>\n";
 },"useData":true});
 templates['hiking'] = template({"1":function(container,depth0,helpers,partials,data) {
     var helper;
@@ -158,12 +158,10 @@ templates['intro'] = template({"1":function(container,depth0,helpers,partials,da
     + "      </div>\n    </div>\n  </div>\n</div>";
 },"useData":true});
 templates['landing'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+    var stack1;
 
-  return "<div class=\"overlay\"></div>\n<div class=\"content\">\n  <div class=\"ftws\">\n    <p>"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.landing : depth0)) != null ? stack1.title : stack1), depth0))
-    + "</p>\n  </div>\n  <div class=\"text\">\n    <h1 class=\"headline\">"
-    + alias2(alias1(((stack1 = (depth0 != null ? depth0.landing : depth0)) != null ? stack1.question : stack1), depth0))
+  return "<div class=\"overlay\"></div>\n<div class=\"content\">\n  <div class=\"text\">\n    <h1 class=\"headline\">"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.landing : depth0)) != null ? stack1.question : stack1), depth0))
     + "</h1>\n  </div>\n</div>\n";
 },"useData":true});
 templates['pricing'] = template({"1":function(container,depth0,helpers,partials,data) {
