@@ -64,5 +64,4 @@ $(function(){
 
   $('form#contact-form').on('submit', sendContactFormData);
   initalizeDatePickers();
-
 });

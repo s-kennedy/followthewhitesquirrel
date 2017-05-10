@@ -111,6 +111,27 @@ a {
   margin: 0.6em;
 }
 
+.logo {
+  position: absolute;
+  z-index: 10;
+  padding-top: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  width: 100%;
+
+  img {
+    width: 50px;
+    margin: 0 10px;
+  }
+
+  span {
+    text-transform: uppercase;
+  }
+}
+
 section#landing {
   color: #fff;
   background: url('../images/barca.jpg') no-repeat center center fixed;
@@ -528,6 +549,7 @@ section#contact {
   text-decoration: none;
   margin: 10px;
   transition: all 0.5s ease-in-out;
+  font-size: 1.2em;
 
   a {
     color: #fff !important;
@@ -566,6 +588,11 @@ section#contact {
 }
 
 @media screen and (max-device-width: 930px) {
+
+  body {
+    font-size: 32px;
+  }
+
   section#team {
     .team-members {
       display: block;
