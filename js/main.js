@@ -1,15 +1,17 @@
 $(function(){
-  smoothScroll.init();
 
-  $('section#landing').html(Handlebars.templates.landing(EN_CONTENT))
-  $('section#intro').html(Handlebars.templates.intro(EN_CONTENT))
-  $('section#camping').html(Handlebars.templates.camping(EN_CONTENT))
-  $('section#hiking').html(Handlebars.templates.hiking(EN_CONTENT))
-  $('section#pricing').html(Handlebars.templates.pricing(EN_CONTENT))
-  $('section#team').html(Handlebars.templates.team(EN_CONTENT))
-  $('section#gallery').html(Handlebars.templates.gallery(EN_CONTENT))
-  $('section#contact').html(Handlebars.templates.contact(EN_CONTENT))
-  $('footer#footer').html(Handlebars.templates.footer(EN_CONTENT))
+  function loadContent(text) {
+    $('section#landing').html(Handlebars.templates.landing(text))
+    $('section#intro').html(Handlebars.templates.intro(text))
+    $('section#camping').html(Handlebars.templates.camping(text))
+    $('section#hiking').html(Handlebars.templates.hiking(text))
+    $('section#pricing').html(Handlebars.templates.pricing(text))
+    $('section#team').html(Handlebars.templates.team(text))
+    $('section#gallery').html(Handlebars.templates.gallery(text))
+    $('section#contact').html(Handlebars.templates.contact(text))
+    $('footer#footer').html(Handlebars.templates.footer(text))
+  };
+
 
   function postToGoogleSheets (data) {
     var url = 'https://script.google.com/macros/s/AKfycbxb2hQxFXnKvKA67YG2YngTv5zLea5mPjsIecjslySsOG_X7_xp/exec'
@@ -62,6 +64,17 @@ $(function(){
     });
   }
 
-  $('form#contact-form').on('submit', sendContactFormData);
+  loadContent(EN_CONTENT);
   initalizeDatePickers();
+  smoothScroll.init();
+
+  $('form#contact-form').on('submit', sendContactFormData);
+  $('#en').on('click', function(e) {
+    e.preventDefault();
+    loadContent(EN_CONTENT);
+  });
+  $('#es').on('click', function(e) {
+    e.preventDefault();
+    loadContent(ES_CONTENT);
+  });
 });

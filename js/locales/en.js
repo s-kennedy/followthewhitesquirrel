@@ -18,13 +18,13 @@ EN_CONTENT = {
     headline: "We love camping!",
     price: "$390",
     product: "Adventure in Algonquin Park",
-    description: "Enjoy one of Canada's classic outdoor experiences, a backcountry camping trip in <a href='http://www.algonquinpark.on.ca/'>Algonquin Park</a>. Algonquin is Ontario's oldest and largest provincial park. We'll plan and guide you through a trip that fits your comfort level and preferences. Our typical excursion is a 3 day trip (Friday morning to Sunday evening) that includes three days of canoeing and two nights of backcountry camping. Beginners are welcome!",
+    description: "Enjoy one of Canada's classic outdoor experiences, a backcountry camping trip in <a href='http://www.algonquinpark.on.ca/'>Algonquin Park</a>. Algonquin is Ontario's oldest and largest provincial park. We'll plan and guide you through a trip that fits your comfort level and preferences. Our typical excursion is a 3 day trip that includes three days of canoeing and two nights of camping. Beginners are welcome!",
     offer: {
       whatWeOffer: "What we offer:",
       items: [
         { label: "Transportation to and from the park" },
         { label: "Tent, sleeping bags, sleeping pads and other camping equipment" },
-        { label: "All meals from lunch on Friday to lunch on Sunday" },
+        { label: "All meals from lunch on the first day to lunch on the last day" },
         { label: "Canoe rental (2 people in a canoe)" },
       ]
     },
@@ -67,7 +67,7 @@ EN_CONTENT = {
           items: [
             { label: "Transportation to and from the park" },
             { label: "Tent, sleeping bags, sleeping pads and other camping equipment" },
-            { label: "All meals from dinner on Friday to lunch on Sunday" },
+            { label: "All meals from lunch on the first day to lunch on the last day" },
             { label: "Canoe rentals (2 people in a canoe)" },
           ]
         },
@@ -76,14 +76,14 @@ EN_CONTENT = {
         name: "hiking",
         price: "$90",
         hst: '+ HST, per person',
-        title: "Day hike and Niagara Falls",
+        title: "Day hike in Niagara Region",
         offer: {
           included: "What's included?",
           items: [
             { label: "Transportation from your doorstep (anywhere in the GTA)" },
             { label: "Packed lunch and snacks for the afternoon" },
             { label: "Trail guide for the Bruce Trail" },
-            { label: "Visit to Niagara Falls" },
+            { label: "Visit to three Niagara Wineries or Niagara Falls" },
           ]
         },
       },
@@ -144,7 +144,7 @@ EN_CONTENT = {
     contactUs: "Contact us",
     interestedIn:"I'm interested in:",
     hiking: "Day hike in Niagara",
-    camping: "Weekend camping in Algonquin",
+    camping: "Backcountry camping in Algonquin",
     custom: "Custom adventure",
     name: "Name:",
     email: "Email address:",
