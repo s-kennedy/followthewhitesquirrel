@@ -67,14 +67,14 @@ templates['contact'] = template({"compiler":[7,">= 4.0.0"],"main":function(conta
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1["return"] : stack1), depth0))
     + "</label>\n          <input type=\"text\" name=\"return-date\" class=\"date-picker\">\n        </div>\n      </div>\n      <div class=\"form-field\">\n        <label for=\"message\">"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.message : stack1), depth0))
-    + "</label>\n        <textarea name=\"message\"></textarea>\n      </div>\n      <div class=\"submit\">\n        <input type=\"submit\" name="
+    + "</label>\n        <textarea name=\"message\"></textarea>\n      </div>\n      <div class=\"submit\">\n        <input type=\"submit\" value="
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.contact : depth0)) != null ? stack1.submit : stack1), depth0))
     + " class=\"button purple\">\n      </div>\n    </form>\n  </div>\n</div>";
 },"useData":true});
 templates['footer'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
-  return "<div class=\"overlay\"></div>\n<div class=\"content\">\n  <div class=\"contact-info\">\n    <p>\n      <a href="
+  return "<div class=\"overlay\"></div>\n<div class=\"content\">\n  <div class=\"contact-info\">\n    <p class=\"social-media\">\n      <a href="
     + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.twitter : stack1), depth0)) != null ? stack1 : "")
     + "><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a>\n      <a href="
     + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.facebook : stack1), depth0)) != null ? stack1 : "")
@@ -86,7 +86,9 @@ templates['footer'] = template({"compiler":[7,">= 4.0.0"],"main":function(contai
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.email : stack1), depth0))
     + "</a></p>\n    <p>"
     + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.phone_en : stack1), depth0))
-    + "</p>\n    <small>Copyright 2017</small>\n  </div>\n</div>\n";
+    + " for English or "
+    + alias2(alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.phone_es : stack1), depth0))
+    + " for Spanish</p>\n    <small>Copyright 2017</small>\n  </div>\n</div>\n";
 },"useData":true});
 templates['gallery'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
@@ -164,8 +166,8 @@ templates['landing'] = template({"compiler":[7,">= 4.0.0"],"main":function(conta
     + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.landing : depth0)) != null ? stack1.question : stack1), depth0))
     + "</h1>\n  </div>\n</div>\n";
 },"useData":true});
-templates['pricing'] = template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
+templates['pricing'] = template({"1":function(container,depth0,helpers,partials,data,blockParams,depths) {
+    var stack1, helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression, alias5=container.lambda;
 
   return "        <div class=\"pricing "
     + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
@@ -176,25 +178,27 @@ templates['pricing'] = template({"1":function(container,depth0,helpers,partials,
     + "</h4>\n          <h3>"
     + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
     + "</h3>\n          <h4>"
-    + alias4(container.lambda(((stack1 = (depth0 != null ? depth0.offer : depth0)) != null ? stack1.included : stack1), depth0))
+    + alias4(alias5(((stack1 = (depth0 != null ? depth0.offer : depth0)) != null ? stack1.included : stack1), depth0))
     + "</h4>\n          <ul class=\"included\">\n"
-    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.offer : depth0)) != null ? stack1.items : stack1),{"name":"each","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "          </ul>\n          <div class=\"action\">\n            <a data-scroll href=\"#contact\" class=\"button yellow\">Book it</a>\n          </div>\n        </div>\n";
+    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.offer : depth0)) != null ? stack1.items : stack1),{"name":"each","hash":{},"fn":container.program(2, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "          </ul>\n          <div class=\"action\">\n            <a data-scroll href=\"#contact\" class=\"button yellow\">"
+    + alias4(alias5(((stack1 = (depths[1] != null ? depths[1].pricing : depths[1])) != null ? stack1.callToAction : stack1), depth0))
+    + "</a>\n          </div>\n        </div>\n";
 },"2":function(container,depth0,helpers,partials,data) {
     var helper;
 
   return "            <li>"
     + container.escapeExpression(((helper = (helper = helpers.label || (depth0 != null ? depth0.label : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : {},{"name":"label","hash":{},"data":data}) : helper)))
     + "</li>\n";
-},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+},"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1;
 
   return "<div class=\"overlay\"></div>\n<div class=\"content\">\n  <div class=\"columns\">\n    <h1 class=\"headline\">"
     + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.pricing : depth0)) != null ? stack1.headline : stack1), depth0))
     + "</h1>\n    <div class=\"pricing-columns\">\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0.pricing : depth0)) != null ? stack1.products : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0.pricing : depth0)) != null ? stack1.products : stack1),{"name":"each","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "    </div>\n  </div>\n</div>";
-},"useData":true});
+},"useData":true,"useDepths":true});
 templates['team'] = template({"1":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
