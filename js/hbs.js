@@ -75,8 +75,6 @@ templates['footer'] = template({"compiler":[7,">= 4.0.0"],"main":function(contai
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
   return "<div class=\"overlay\"></div>\n<div class=\"content\">\n  <div class=\"contact-info\">\n    <p class=\"social-media\">\n      <a href="
-    + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.twitter : stack1), depth0)) != null ? stack1 : "")
-    + "><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a>\n      <a href="
     + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.facebook : stack1), depth0)) != null ? stack1 : "")
     + "><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a>\n      <a href="
     + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.footer : depth0)) != null ? stack1.instagram : stack1), depth0)) != null ? stack1 : "")
