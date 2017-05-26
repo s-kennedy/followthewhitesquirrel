@@ -16,9 +16,9 @@ ES_CONTENT = {
   },
   camping: {
     headline: "¡Vámonos de 'backcountry camping'!",
-    price: "$390 + HST",
+    price: "$350/390 + HST",
     product: "Aventura en Algonquin Park con canoas",
-    description: "Disfruta de una de las clásicas experiencias en Canadá, el 'backcountry camping' en <a href='http://www.algonquinpark.on.ca/'>Algonquin Park</a>. Algonquin es el más grande y antiguo parque provincial de Ontario. Te guiaremos según tus preferencias y nivel de confort. Nuestras excursiones típicas son de 3 días que incluyen dos días de viaje en canoa y tres noches de camping en lugares increíbles. ¡Personas sin experiencia son bienvenidos!",
+    description: "Disfruta de una de las clásicas experiencias en Canadá, el 'backcountry camping' en <a href='http://www.algonquinpark.on.ca/'>Algonquin Park</a>. Algonquin es el más grande y antiguo parque provincial de Ontario. Te guiaremos según tus preferencias y nivel de confort. Nuestras excursiones típicas son de 3 días que incluyen dos días de viaje en canoa y tres noches de camping en lugares increíbles. El precio normal es $390. Si hacemos un viaje de 2,5 dias, por ejemplo viernes noche a domingo noche, reducimos el precio a $350. ¡Personas sin experiencia son bienvenidos!",
     offer: {
       whatWeOffer: "¿Qué ofrecemos?",
       items: [
@@ -59,7 +59,7 @@ ES_CONTENT = {
     products: [
       {
         name: "camping",
-        price: "$390",
+        price: "$350/390",
         hst: "+ HST, por persona",
         title: "Aventura en Algonquin Park",
         offer: {
@@ -69,6 +69,8 @@ ES_CONTENT = {
             { label: "Tienda, sacos de dormir, colchonetas y equipamiento básico." },
             { label: "Todas las comidas están incluidas." },
             { label: "El alquiler de las canoas." },
+            { label: "Todas las tasas del parque." },
+            { label: "Precio reducido si salimos la noche del primer día." },
           ]
         },
       },

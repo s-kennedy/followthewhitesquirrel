@@ -16,9 +16,9 @@ EN_CONTENT = {
   },
   camping: {
     headline: "We love camping!",
-    price: "$390",
+    price: "$350/390",
     product: "Adventure in Algonquin Park",
-    description: "Enjoy one of Canada's classic outdoor experiences, a backcountry camping trip in <a href='http://www.algonquinpark.on.ca/'>Algonquin Park</a>. Algonquin is Ontario's oldest and largest provincial park. We'll plan and guide you through a trip that fits your comfort level and preferences. Our typical excursion is a 3 day trip that includes three days of canoeing and two nights of camping. Beginners are welcome!",
+    description: "Enjoy one of Canada's classic outdoor experiences, a backcountry camping trip in <a href='http://www.algonquinpark.on.ca/'>Algonquin Park</a>. Algonquin is Ontario's oldest and largest provincial park. We'll plan and guide you through a trip that fits your comfort level and preferences. Our typical excursion is a 3 day trip that includes three days of canoeing and two nights of camping. The regular price is $390. For a 2.5 day weekend trip where we leave Friday evening and return Sunday evening, the prices is reduced to $350. Beginners are welcome!",
     offer: {
       whatWeOffer: "What we offer:",
       items: [
@@ -59,7 +59,7 @@ EN_CONTENT = {
     products: [
       {
         name: "camping",
-        price: "$390",
+        price: "$350/390",
         hst: "+ HST, per person",
         title: "Adventure in Algonquin Park",
         offer: {
@@ -69,6 +69,8 @@ EN_CONTENT = {
             { label: "Tent, sleeping bags, sleeping pads and other camping equipment" },
             { label: "All meals from lunch on the first day to lunch on the last day" },
             { label: "Canoe rentals (2 people in a canoe)" },
+            { label: "All park and camping fees for three days" },
+            { label: "Reduced price ($350) if we leave the evening of the first day" },
           ]
         },
       },
@@ -159,7 +161,6 @@ EN_CONTENT = {
     phone_en: '(647) 898-1710',
     phone_es: '(647) 928-3095',
     facebook: 'https://www.facebook.com/followthewhitesquirrel',
-    twitter: 'https://twitter.com/f_t_w_s',
     instagram: 'https://www.instagram.com/esunabonabota',
   }
 }
