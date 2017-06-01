@@ -4,7 +4,10 @@
   "description": "Camping and hiking tours in Ontario",
   "main": "index.js",
   "scripts": {
-    "build-dist": "handlebars templates/**.handlebars -f js/hbs.js && sass sass/styles.scss css/styles.css"
+    "build-dist": "handlebars templates/**.handlebars -f js/hbs.js && sass sass/styles.scss css/styles.css",
+    "build-scripts": "handlebars templates/**.handlebars -f js/hbs.js",
+    "build-node-sass": "node-sass --include-path scss sass/styles.scss css/styles.css",
+    "start": "npm run build-scripts && npm run build-node-sass && lite-server"
   },
   "repository": {
     "type": "git",
@@ -22,9 +25,14 @@
   },
   "homepage": "https://github.com/s-kennedy/followthewhitesquirrel#readme",
   "dependencies": {
+    "flag-icon-css": "^2.8.0",
     "handlebars": "^4.0.6",
     "node-polyglot": "^2.2.2",
     "pikaday": "^1.5.1",
     "smooth-scroll": "github:cferdinandi/smooth-scroll"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.5.3"
   }
 }
